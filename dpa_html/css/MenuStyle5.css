@@ -1,0 +1,121 @@
+STYLE BODY
+{
+    BACKGROUND-COLOR: #ffffff;
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 1em;
+    LINE-HEIGHT: 1em
+}
+.mnContainer
+{
+    BACKGROUND-COLOR: #ffffff;
+    LEFT: 0px;
+    POSITION: relative;
+    TOP: 25px;
+    Z-INDEX: 2
+}
+.mnSection
+{
+    BACKGROUND-COLOR: #6EA6DB;
+    POSITION: absolute;
+    WIDTH: 100px
+}
+.mnTitle
+{
+    BACKGROUND-COLOR: #9CD3F5;
+    BORDER-BOTTOM: #000000 1px solid;
+    BORDER-LEFT: #ffffff 1px solid;
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #ffffff 1px solid;
+    COLOR: #000000;
+    CURSOR: hand;
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 10pt;
+    HEIGHT: 18px;
+    POSITION: absolute;
+    TEXT-ALIGN: center;
+    WIDTH: 90px
+}
+.mnItem
+{
+    BACKGROUND-COLOR: #6EA6DB;
+    BORDER-BOTTOM: #6EA6DB -1px solid;
+    BORDER-LEFT: #D7E1DE 1px solid;
+    BORDER-RIGHT: #D7E1DE 1px solid;
+    BORDER-TOP: #6EA6DB -1px solid;
+    COLOR: #0600FD;
+    CURSOR: hand;
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 10pt;
+    HEIGHT: 18px;
+    POSITION: absolute;
+    WIDTH: 90px
+}
+.mnItemHot
+{
+    BACKGROUND-COLOR: #f7fdd1;
+    BORDER-BOTTOM: #000000 1px solid;
+    BORDER-LEFT: #ffffff 1px solid;
+    BORDER-RIGHT: #ffffff 1px solid;
+    BORDER-TOP: #ffffff 1px solid;
+    COLOR: blue;
+    CURSOR: hand;
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 10pt;
+    HEIGHT: 18px;
+    POSITION: absolute;
+    WIDTH: 90px
+}
+.mnItemActive
+{
+    BACKGROUND-COLOR: #3179BD;
+    BORDER-BOTTOM: #ffffff 1px solid;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    COLOR: #F7DC7D;
+    CURSOR: hand;
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 10pt;
+    HEIGHT: 18px;
+    POSITION: absolute;
+    WIDTH: 90px
+}
+.mnItemActiveHot
+{
+    BACKGROUND-COLOR: #3179BD;
+    BORDER-BOTTOM: #ffffff 1px solid;
+    BORDER-LEFT: #000000 1px solid;
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    COLOR: #F7DC7D;
+    CURSOR: hand;
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 10pt;
+    HEIGHT: 18px;
+    POSITION: absolute;
+    WIDTH: 90px
+}
+.mnItemBlank
+{
+    BACKGROUND-COLOR: #6EA6DB;
+    BORDER-BOTTOM: #6EA6DB -1px solid;
+    BORDER-LEFT: #D7E1DE 1px solid;
+    BORDER-RIGHT: #D7E1DE 1px solid;
+    BORDER-TOP: #6EA6DB -1px solid;
+    HEIGHT: 18px;
+    POSITION: absolute;
+    WIDTH: 90px
+}
+A.fav
+{
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial, Helvetica;
+    FONT-SIZE: 0.8em
+}
+.fav
+{
+    COLOR: white;
+    FONT-FAMILY: Arial, Helvetica;
+    FONT-SIZE: 0.8em
+}

@@ -1,0 +1,10 @@
+body{ font: 13px  ;background-color:white }
+table{ border-collapse :collapse; font-family: Arial; font-size: 13px;}
+a:link {color: #ce9a31; TEXT-DECORATION: none}
+a:hover {COLOR: #1350a2!important; TEXT-DECORATION: underline}
+a:visited {COLOR: #ce9a31; TEXT-DECORATION: none}
+img{border:0}
+p.title{font-weight:bold;font-size:16px;color:black;text-align:center}
+p { text-indent:25px;font:14px;margin-left:5px;margin-right:5px;margin-top:5px;margin-bottom:5px; }
+p.p{text-indent:0px;font:14px;margin-left:10px;margin-right:10px;margin-top:20px;margin-bottom:20px;color:#3024c4;font-weight:bold;}
+pre{background-color:#efefef;margin-left:28px;margin-right:28px;color:#000080}

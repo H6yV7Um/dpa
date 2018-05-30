@@ -1,0 +1,135 @@
+<html>
+<head>
+<title></title>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<style type=text/css>
+td,p,input,select {font-family:宋体;font-size:12px;}
+.ttd {font-family:宋体;font-size:14px;color=#000000}
+A.title1:link {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:visited {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:active {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:hover {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+
+A.title3:link {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:visited {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:active {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:hover {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+</style>
+<SCRIPT  LANGUAGE=javascript>
+function goprex()
+{
+	var form=document.myform;
+	form.getElementsByTagName("input")["do"].value="schedule_list";
+	
+	// add new elements
+	var newInput = document.createElement("input");
+	newInput.type="hidden"; 
+	newInput.name="rewind";
+	newInput.value=1;
+	form.appendChild(newInput);
+	
+	form.submit();
+	return true;
+}
+function Validate()
+{
+	var form=document.myform;
+	if(form.name.value==""){
+		window.alert('请填写任务名称！');
+		form.name.focus();
+		return false;
+	}
+
+	if(form.host.value==""){
+		window.alert('请填写执行主机！');
+		form.host.focus();
+		return false;
+	}
+		
+	return true;
+}
+
+function checkSelected(obj)
+{
+	for(var i=0; i<obj.length; i++)
+	{
+		if(obj[i].checked) return true;
+	}
+	return false;
+}
+</SCRIPT>
+</head>
+<body bgcolor=#f2faff leftmargin=5 topmargin=5 marginwidth=0 marginheight=0>
+<form method=post name=myform action='main.php' onSubmit='return Validate();'>
+  <input type=hidden name="do" value="schedule_step2">
+  <input type=hidden name="_action" value="<!--{$_action}-->">
+  <input type=hidden name="id" value='<!--{$id}-->'>
+  <center>
+    <table border=0 cellpadding=0 cellspacing=0 width=100%>
+      <tr>
+        <td  height=24 class=ttd bgcolor=#f2faff align=center>创建任务(第一步：填写任务名称、选择主机)</td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr>
+        <td height=2 bgcolor=#000000><img src='<!--{$RES_WEBPATH_PREF}-->dpa_html/images/c.gif' width=1 height=1></td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr bgcolor=#D9E2D0>
+        <td height=24 bgcolor=F3F3EE><br>
+        </td>
+      </tr>
+    </table>
+    <table align=center border=0 cellpadding=0 cellspacing=0 width=100% class=ttd bgcolor=#F3F3EE>
+      <tr height=30>
+        <td nowrap width=20% align=right>任务名称:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><input type=text name='name' value='<!--{$name}-->'></td>
+      </tr>
+      <tr height=30>
+        <td nowrap align=right>执行主机:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><select name='host' type=select>
+            <!--{$host_options}-->
+          </select>
+          (<a href="?do=host_backend_add">添加</a>主机)</td>
+      </tr>
+      <!--<tr height=30>
+        <td nowrap align=right>待选项目:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><select name=p_id type=select>
+            <option value='1' >1 - 财经</option>
+            <option value='4' >4 - 汽车</option>
+            <option value='7' >7 - MSN股票</option>
+          </select>
+        </td>
+      </tr> -->
+      <tr height=60>
+        <td nowrap align=right><input type=button value='上一步' onClick='goprex();'></td>
+        <td width=10>&nbsp;</td>
+        <td nowrap>&nbsp;
+          <input type=submit value='下一步'>
+          &nbsp;
+          <input type=button onClick="window.open('main.php?do=schedule_list','_self');" value='取消'>
+        </td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr bgcolor=#D9E2D0>
+        <td height=25 bgcolor=F3F3EE><br>
+        </td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr>
+        <td height=2 bgcolor=#000000><img src=<!--{$RES_WEBPATH_PREF}-->dpa_html/images/c.gif width=1 height=1></td>
+      </tr>
+    </table>
+  </center>
+</form>
+</body>
+</html>
+<!-- CHT 2009-04-26 13:47:56 -->

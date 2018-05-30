@@ -1,0 +1,11 @@
+1. 整个系统的权限管理非常严格
+PHP部分分为内部和外部
+
+内部使用的php只有 admin.ni9ni.com ，需要进行http auth认证
+外部使用的php只有 uibi.ni9ni.com 域名下的，因为涉及注册等
+
+
+外部使用的do必须是o，然后在action和type分别指定要做什么。
+
+
+

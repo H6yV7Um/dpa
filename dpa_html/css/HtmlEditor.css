@@ -1,0 +1,11 @@
+.HTMLEditor {
+	font-family: Verdana, Tahoma, Arial, 'MS Sans Serif';
+	font-size: 77%;
+}
+.cbtn {
+	BORDER-LEFT: #efedde 1px solid;
+	BORDER-RIGHT: #efedde 1px solid;
+	BORDER-TOP: #efedde 1px solid;
+	BORDER-BOTTOM: #efedde 1px solid; 
+}
+.txtbtn {font-family:tahoma; font-size:70%; color:menutext;}

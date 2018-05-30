@@ -1,0 +1,69 @@
+BODY {
+	BACKGROUND: #eaf2ff; FONT-FAMILY: 宋体; FONT-SIZE: 75%
+}
+BODY.nav {
+	BACKGROUND: #b0d8ff; FONT-FAMILY: 宋体; FONT-SIZE: 75%
+}
+.smallFont {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 11pt
+}
+P {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 15pt
+}
+LI {
+	FONT-SIZE: 9pt
+}
+UL {
+	FONT-SIZE: 9pt
+}
+B BigFont {
+	FONT-SIZE: 11pt
+}
+INPUT.smallInput {
+	BACKGROUND-COLOR: #ffffff; COLOR: #000080; FONT-SIZE: 9pt
+}
+TEXTAREA.smallarea {
+	BACKGROUND-COLOR: #ffffff; COLOR: #000080; FONT-SIZE: 9pt
+}
+SELECT.smallSel {
+	BACKGROUND-COLOR: #ffffff; COLOR: #000080; FONT-SIZE: 9pt
+}
+INPUT.buttonface {
+	BACKGROUND-COLOR: #d2e9ff; COLOR: #000080; FONT-SIZE: 9pt
+}
+A:link {
+	COLOR: #00008b; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #3366cc; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #cc0000; TEXT-DECORATION: underline
+}
+TABLE.ubb {
+	BORDER-BOTTOM: #a9a9a9 1px solid; BORDER-LEFT: #a9a9a9 1px solid; BORDER-RIGHT: #a9a9a9 1px solid; BORDER-TOP: #a9a9a9 1px solid; FONT-SIZE: 9pt
+}
+TD.ubb {
+	BORDER-BOTTOM: #a9a9a9 1px solid; BORDER-LEFT: #a9a9a9 1px solid; BORDER-RIGHT: #a9a9a9 1px solid; BORDER-TOP: #a9a9a9 1px solid; FONT-SIZE: 9pt
+}
+INPUT.dialogbutton {
+	BACKGROUND-COLOR: #d2e9ff; COLOR: #000080; CURSOR: hand; FONT-SIZE: 9pt
+}
+TR {
+	FONT-SIZE: 9pt
+}
+TD {
+	FONT-SIZE: 9pt
+}
+.white {
+	COLOR: #ffffff
+}
+.lan {
+	COLOR: #336699
+}
+.landa {
+	COLOR: #336699; FONT-SIZE: 12pt; FONT-WEIGHT: bold
+}
+.bg {
+	BACKGROUND-COLOR: #ffcc33
+}

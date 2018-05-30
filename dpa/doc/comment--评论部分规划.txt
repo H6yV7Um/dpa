@@ -1,0 +1,1903 @@
+1. 新浪网
+新闻地址：http://news.sina.com.cn/c/2012-05-10/                                       2035 24397812.shtml
+评论链接：http://comment5.news.sina.com.cn/comment/    comment5.html?channel=gn&newsid=1-1-24397812&style=0
+连接跳转：http://comment5.news.sina.com.cn/comment/skin/default.html?channel=gn&newsid=1-1-24397812&style=0
+
+评论的参数规律：
+channel:栏目，gn表示国内新闻
+newsid: newsid=1-1-24397812  三项分别是项目id，表id，文档id
+style: 显示样式
+
+
+2. 网易网
+新闻地址：  http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+评论链接：  http://comment.news.163.com/news3_bbs/815O9B6N00014JB5.html
+连接跳转：  http://comment.news.163.com/news3_bbs/815O9B6N00014JB5.html
+
+评论数据json:   http://comment.news.163.com/data/news3_bbs/df/815O9B6N00014JB5_1.html  // 有分页功能
+
+顶贴：http://comment.news.163.com/reply/upvote/news3_bbs/815O9B6N00014JB5_815OKTV9
+
+
+
+
+var replyData={"prcount":0,"ischeck":0,"hotPosts":....,"ptcount":0};
+
+解析后的js数组为：
+stdClass Object
+(
+    [prcount] => 0
+    [ischeck] => 0
+    [hotPosts] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易广东省网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=501277299@qq.com>警告你艹你沒资格代表我</a>]： 
+                            [b] => 不判死刑不罢休
+                            [a] => 0
+                            [n] => 警告你艹你沒资格代表我
+                            [l] => 0
+                            [tsn] => 5103810663
+                            [ip] => 183.61.*.*
+                            [timg] => http://126.fm/gOsvL
+                            [v] => 5033
+                            [u] => 501277299@qq.com
+                            [t] => 2012-05-10 18:21:12
+                            [p] => 815OKTV9
+                            [tid] => -5814954484794885717
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易新疆乌鲁木齐市网友 <span id=110.152.104.180_815OS49Q class=cGray>ip：110.152.*.*：</span>
+                            [v] => 4333
+                            [u] => 686314@163.com
+                            [t] => 2012-05-10 18:25:08
+                            [b] => 如果我是她的父母，我会选择用他（家人）赔偿的全部钱，同样赔偿给他（家人），只求“泼洒打火机油焚烧，惨遭毁容，（使他）的面部、颈部、胸部严重烧伤，一只耳朵也烧掉了，整体烧伤面积超过30%。”----------然后，再让法院也判她十二年----------
+                            [a] => 0
+                            [p] => 815OS49Q
+                            [n] => 686314@163.com
+                            [l] => 0
+                            [ip] => 110.152.*.*
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易浙江省网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=chenxnz@163.com>爱国不怕被骂美狗</a>]： 
+                            [b] => 我记得有这么句词难道因为是官二代就不适用:手段特别残忍，情节特别恶劣，对社会造成了极其不利的影响
+                            [a] => 0
+                            [n] => 爱国不怕被骂美狗
+                            [l] => 0
+                            [tsn] => chenxnz
+                            [ip] => 183.130.*.*
+                            [timg] => http://img1.cache.netease.com/t/img/default80.png
+                            [v] => 3798
+                            [u] => chenxnz@163.com
+                            [t] => 2012-05-10 18:27:00
+                            [p] => 815OVHK0
+                            [tid] => 7557948161611946281
+                        )
+
+                )
+
+            [3] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易亚太地区网友 <span id=101.65.132.239_815P0K10 class=cGray>ip：101.65.*.*：</span>
+                            [v] => 2430
+                            [u] => 2896773@163.com
+                            [t] => 2012-05-10 18:27:35
+                            [b] => 公正何在？为什么现在的社会都是明着帮这些官2富2，而且两个口的人脸皮都这么厚
+                            [a] => 0
+                            [p] => 815P0K10
+                            [n] => 2896773@163.com
+                            [l] => 0
+                            [ip] => 101.65.*.*
+                        )
+
+                )
+
+            [4] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易山西省长治市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=kb878346@163.com>一个爱下雨的男人</a>]： 
+                            [b] => 中国这可笑的法律！去你女马的吧！才12年 草！！！！！！！！！！！！！！
+                            [a] => 0
+                            [n] => 一个爱下雨的男人
+                            [l] => 0
+                            [tsn] => 2063712919
+                            [ip] => 60.220.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 1918
+                            [u] => kb878346@163.com
+                            [t] => 2012-05-10 18:28:23
+                            [p] => 815P22UB
+                            [tid] => 1504845569591307203
+                        )
+
+                )
+
+            [5] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易山东省济南市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=zjhaha027@163.com>嗨爺</a>]： 
+                            [b] => 菲佣：老爷，我们国家需要我，我要回去<br>老爷：回你娘个B<br>菲佣：老爷，我很害怕<br>老爷：怕你娘个B<br>菲佣：虽然我给你生了3个儿子，但是我很耐很耐我的国家<br>老爷：生你娘个B<br>菲佣：老爷你让我回国吧<br>老爷：行了，给你涨200块钱工资<br>菲佣：老爷，我不走了，我灰常耐中国耐你们<br>老爷：想要涨工资明说，扯你娘个B
+                            [a] => 0
+                            [n] => 嗨爺
+                            [l] => 0
+                            [tsn] => 2716015359
+                            [ip] => 58.56.*.*
+                            [timg] => http://126.fm/4Zl3Ne
+                            [v] => 1673
+                            [u] => zjhaha027@163.com
+                            [t] => 2012-05-10 18:22:32
+                            [p] => 815ONC1P
+                            [tid] => -4126870259922334989
+                        )
+
+                )
+
+            [6] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易福建省泉州市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=lanfanqunvip@163.com>凡人逍遥子</a>]： 
+                            [b] => 受害人周岩在听到判决后称气死我了，干脆判当庭释放算了。<br>我同情你，毕竟一个人的青春甚至一生就这么过去了，但我相信你在这之前也不是什么好鸟的那一种。
+                            [a] => 0
+                            [n] => 凡人逍遥子
+                            [l] => 0
+                            [tsn] => 1866150306
+                            [ip] => 59.57.*.*
+                            [timg] => http://126.fm/Tvavs
+                            [v] => 1504
+                            [u] => lanfanqunvip@163.com
+                            [t] => 2012-05-10 18:32:02
+                            [p] => 815P8O4O
+                            [tid] => -8687328295620295095
+                        )
+
+                )
+
+            [7] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易安徽省合肥市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=zhaojie198906@163.com>ZTJ1</a>]： 
+                            [b] => 对善者狠心，对狠者善心~~我不想评论了~~
+                            [a] => 0
+                            [n] => ZTJ1
+                            [l] => 0
+                            [tsn] => 7676166734
+                            [ip] => 61.132.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 1322
+                            [u] => zhaojie198906@163.com
+                            [t] => 2012-05-10 18:29:40
+                            [p] => 815P4DQU
+                            [tid] => 5104792010097937349
+                        )
+
+                )
+
+            [8] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易上海市网友 <span id=180.174.221.182_815P1QR8 class=cGray>ip：180.174.*.*：</span>
+                            [v] => 1047
+                            [u] => jyhf1986@163.com
+                            [t] => 2012-05-10 18:28:15
+                            [b] => 呵呵！这样都不判死，真服了
+                            [a] => 0
+                            [p] => 815P1QR8
+                            [n] => jyhf1986@163.com
+                            [l] => 0
+                            [ip] => 180.174.*.*
+                        )
+
+                )
+
+            [9] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易安徽省合肥市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=xiang.2111@163.com>xiang2111</a>]： 
+                            [b] => 我能做的就是顶你
+                            [a] => 0
+                            [n] => xiang2111
+                            [l] => 0
+                            [tsn] => 4199628965
+                            [ip] => 124.73.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 656
+                            [u] => xiang.2111@163.com
+                            [t] => 2012-05-10 18:26:11
+                            [p] => 815OU1AD
+                            [tid] => -652753047359037549
+                        )
+
+                )
+
+        )
+
+    [purl] => http://comment.news.163.com/news3_bbs/815O9B6N00014JB5.html
+    [thread] => stdClass Object
+        (
+            [recommentweight] => 0
+            [m_table] => 
+            [nickname] => netease
+            [digg] => 0
+            [keyword] => 
+            [userid] => netease
+            [pdocid] => 815O9B6N00014JB5
+            [oldid] => no
+            [modelid] => 0001post0910_ad
+            [rcount] => 1253
+            [table] => 
+            [board] => 
+            [url] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+            [tcount] => 1199
+            [anonymous] => 0
+            [docid] => 815O9B6N00014JB5
+            [title] => 合肥少女毁容案一审宣判 受害人：气死我了
+            [abs] => 
+            [lmodify] => 2012-05-11 00:00:00
+            [needcheck] => 0
+            [plock] => 0
+            [isnew] => 0
+            [ptime] => 2012-05-10 18:14:55
+        )
+
+    [digurl] => /comment/0001/news3_bbs/6N/815O9B6N00014JB5.js
+    [board] => stdClass Object
+        (
+            [template] => default
+            [mustcheck] => 0
+            [board_status] => 0
+            [boardname] => 新闻跟贴
+            [operuid] => wbgao
+            [url] => 
+            [channelid] => 0001
+            [ip] => 
+            [bmids] => 
+            [lmodify] => 2010-09-26 22:29:06
+            [boardid] => news3_bbs
+            [creatoruid] => wbgao
+            [ptime] => 2010-09-26 22:29:06
+            [datasource] => reply_other
+        )
+
+    [ptcount] => 0
+)
+
+stdClass Object
+(
+    [newPosts] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易湖南省长沙市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=hytler0110@163.com>钟ZHONG</a>]： 
+                            [b] => 你二啊？！杀人才死刑，她才5级伤。是，她是很可怜，但是再可怜也要从法律的角度来看吧！12年已经不轻了！
+                            [a] => 0
+                            [n] => 钟ZHONG
+                            [l] => 0
+                            [tsn] => hytler0110
+                            [ip] => 118.250.*.*
+                            [timg] => http://img1.cache.netease.com/t/img/default80.png
+                            [v] => 0
+                            [u] => hytler0110@163.com
+                            [t] => 2012-05-11 00:21:07
+                            [p] => 816D7UL3
+                            [tid] => -5909813254732825773
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816D7UL3
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易广东省网友 [警告你艹你沒资格代表我] 的原贴：
+                            [u] => 501277299@qq.com
+                            [b] => 不判死刑不罢休
+                            [s] => 
+                            [p] => 816D7UL3
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_815OKTV9
+                            [k] => 
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [3] => stdClass Object
+                        (
+                            [f] => 网易河北省网友 [adamdx] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => adamdx@163.com
+                            [t] => 2012-05-10 23:40:23
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 我不是法律人士。<br>我记得的是，网络不参与，小陶甚至几乎要被取保候审。<br>罪认了吗？<br>有良心的人看到得是绞辩。<br>我主张的是，该查清的人，要去查清，给大家一个交待。<br>律师、受害人家属提了那么多问题，为何不采信，不采信的原因是什么？<br>利益要归于被告，如果该查的，该说的不去做，不做为，岂不全部要归于被告？<br>为什么王律师提出了问题，该回答的人没出来回答呢，也许你是该回答的人，可以为什么不在你该处的场合－－法庭内回答，说服律师与当事人呢？<br>王律师做了他该做的，你做了没有？<br>
+                            [p] => 816ATBL2
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816ATBL2
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易河北省网友 [adamdx] 的原贴：
+                            [u] => adamdx@163.com
+                            [t] => 2012-05-10 23:31:54
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 我不是法律人士。<br>我记得的是，网络不参与，小陶甚至几乎要被取保候审。<br>罪认了吗？<br>有良心的人看到得是绞辩。<br>我主张的是，该查清的人，要去查清，给大家一个交待。<br>律师、受害人家属提了那么多问题，为何不采信，不采信的原因是什么？<br>利益要归于被告，如果该查的，该说的不去做，不做为，岂不全部要归于被告？<br>为什么王律师提出了问题，该回答的人没出来回答呢，也许你是该回答的人，可以为什么不在你该处的场合－－法庭内回答，说服律师与当事人呢？<br>王律师做了他该做的，你做了没有？
+                            [p] => 816ADQDK
+                            [bi] => news3_bbs
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                            [pi] => 815O9B6N00014JB5_816ADQDK
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易安徽省合肥市网友 [半日谈] 的原贴：
+                            [u] => hxg_2001@163.com
+                            [b] => 就事论事，欢迎拍砖，笑对谩骂。。现在律师也真是为了钱不顾一切，原先王亚林在安徽刑辩领域属于比较客观的律师，现在也钻入牛角尖了，请问如果你担任辩护人是什么态度？两周之前，你辩护的罗国华案庭审还历历在目，您现在的思路不是客观分析证据，而是拼了命的博取同情。。。。打火机油多少烧掉了，从哪里补强？明知无法分析，煽动舆论干扰客观判断，但你忘了证据不清，利益要归于被告人的刑诉原则。故意杀人还是故意伤害，需要客观看待，“心中充满争议，双眼往来于事实与法律之间”，从客观生活常识和事实看，报复伤害的故意显而易见，杀人的故意则实属勉强。伤情重新鉴定还能超出重伤吗？显然不能，皮肤烧伤而伤残五级，就您做多年刑辩律师难道不知道是否客观吗？目的为了在舆论和当事人面前绕，索要更多钱财。认罪和有赔偿态度不是酌定从轻理由？为何罗国华案为什么你也这样辩？律师行业也毁了
+                            [s] => 
+                            [p] => 816ADQDK
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_8169HCCO
+                            [k] => 
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [f] => 网易河北省网友 <span id=27.188.167.133_816D64I3 class=cGray>ip：27.188.*.*：</span>
+                            [d] => 815O9B6N00014JB5
+                            [b] => 记者要访问陶肛的父母，发现早已被法院专车送走，绝尘而去。有篇网络报道是这样写的
+                            [a] => 0
+                            [n] => adamdx
+                            [l] => 1
+                            [tsn] => 9037084449
+                            [ip] => 27.188.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 0
+                            [u] => adamdx@163.com
+                            [t] => 2012-05-11 00:20:08
+                            [p] => 816D64I3
+                            [tid] => -5366110562477827090
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816D64I3
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [f] => 网易河北省网友 [adamdx] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => adamdx@163.com
+                            [t] => 2012-05-11 00:06:22
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 扯远了。卡扎菲同这个案子没关系。<br>我是见不得一些人，对弱者，受害者不同情不支助，围观罢了，还落井下石，混淆是非
+                            [p] => 816CCULG
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816CCULG
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [f] => 网易山西省阳泉市网友 [ttzl007] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => ttzl007@163.com
+                            [t] => 2012-05-10 23:56:26
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 法棺收钱办案都知道，世界文明中国法棺谁送的多谁赢官司，谁官大谁赢官司。地球人都知道，这个流氓D不除，人类永远生活在苦难。我坚信世界人民一定可以看到中国的卡扎菲被抛尸荒野。死得不如一只猪
+                            [p] => 816BQOIN
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BQOIN
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 [过路打酱油的] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => stelae@163.com
+                            [t] => 2012-05-10 23:48:05
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 肯定做了!你以为个个都是拿钱发呆的货?!这可是按规则办事的,拿人钱财,替人消灾!
+                            [p] => 816BBF42
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BBF42
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 <span id=182.151.69.177_816D3LE2 class=cGray>ip：182.151.*.*：</span>
+                            [v] => 0
+                            [u] => thenboo@163.com
+                            [t] => 2012-05-11 00:18:47
+                            [b] => 刑事案件同早恋扯上了？要是在过去，这个岁数都当爹了。<br>没有理由证明，毁容同早恋有必然的因果关系，既往毁容案也是早恋造成的吗？<br>畜生应该终身监禁，以便犯罪基因绝后，净化民族，净化人类。
+                            [a] => 0
+                            [p] => 816D3LE2
+                            [n] => thenboo@163.com
+                            [l] => 0
+                            [ip] => 182.151.*.*
+                        )
+
+                )
+
+            [3] => stdClass Object
+                (
+                    [3] => stdClass Object
+                        (
+                            [f] => 网易河北省邢台市网友 [俅贁] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => china0510@126.com
+                            [t] => 2012-05-10 21:50:36
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 二楼，好好待在深圳打你的工。一楼的话，你是看不懂的。
+                            [p] => 8164KB4F
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_8164KB4F
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易广东省深圳市网友(113.90.*.*)的原贴：
+                            [u] => cbag911@126.com
+                            [t] => 2012-05-10 21:44:34
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 山东人呢的素质。。。
+                            [p] => 816499LO
+                            [bi] => news3_bbs
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                            [pi] => 815O9B6N00014JB5_816499LO
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易山东省济南市网友 [嗨爺] 的原贴：
+                            [u] => zjhaha027@163.com
+                            [b] => 菲佣：老爷，我们国家需要我，我要回去<br>老爷：回你娘个B<br>菲佣：老爷，我很害怕<br>老爷：怕你娘个B<br>菲佣：虽然我给你生了3个儿子，但是我很耐很耐我的国家<br>老爷：生你娘个B<br>菲佣：老爷你让我回国吧<br>老爷：行了，给你涨200块钱工资<br>菲佣：老爷，我不走了，我灰常耐中国耐你们<br>老爷：想要涨工资明说，扯你娘个B
+                            [s] => 
+                            [p] => 816499LO
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_815ONC1P
+                            [k] => 
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [f] => 网易河北省邢台市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=china0510@126.com>俅贁</a>]： 
+                            [d] => 815O9B6N00014JB5
+                            [b] => 那祝你生意发财，手袋包包越卖越多啦。
+                            [a] => 0
+                            [n] => 俅贁
+                            [l] => 0
+                            [tsn] => 0004218948
+                            [ip] => 221.194.*.*
+                            [timg] => http://126.fm/24EoKs
+                            [v] => 0
+                            [u] => china0510@126.com
+                            [t] => 2012-05-11 00:18:47
+                            [p] => 816D3LSK
+                            [tid] => -1758236523589381433
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816D3LSK
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [f] => 网易广东省深圳市网友(113.90.*.*)的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => cbag911@126.com
+                            [t] => 2012-05-10 22:17:31
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 就你聪明，还我看不懂，逗一楼玩呢。很不幸的告诉你，本人是如假包换的有限公司法人。
+                            [p] => 81665KG6
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_81665KG6
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                )
+
+            [4] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易河北省网友 <span id=27.188.167.133_816D2S5S class=cGray>ip：27.188.*.*：</span>
+                            [b] => 记者要访问陶肛的父母，发现早已被法院专车送走，绝尘而去。有篇网络报道是这样写的
+                            [a] => 0
+                            [n] => adamdx
+                            [l] => 0
+                            [tsn] => 9037084449
+                            [ip] => 27.188.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 0
+                            [u] => adamdx@163.com
+                            [t] => 2012-05-11 00:18:21
+                            [p] => 816D2S5S
+                            [tid] => -5366110562477827090
+                        )
+
+                )
+
+            [5] => stdClass Object
+                (
+                    [3] => stdClass Object
+                        (
+                            [f] => 网易湖南省娄底市网友 [花天公子] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => twrb2012@163.com
+                            [t] => 2012-05-10 22:55:48
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 按法律公平来看，对一位未成年人，判十二年，这还不重？ 但要按中国国情来说，这就是人云亦云了； <br>在这里看大家是支持法律，还是选择国情； 以后也就不要再谈什么法律公正了，一切以国情出发；
+                            [p] => 8168BNL5
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_8168BNL5
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易广东省广州市网友 [闪了舌头] 的原贴：
+                            [u] => happy88@126.com
+                            [t] => 2012-05-10 22:51:31
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 你想说什么，说12年判重了呗？
+                            [p] => 81683SPH
+                            [bi] => news3_bbs
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                            [pi] => 815O9B6N00014JB5_81683SPH
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易湖南省娄底市网友 [花天公子] 的原贴：
+                            [u] => twrb2012@163.com
+                            [b] => 欧洲去年有一位高中生，枪杀了78人，只判了十六年，这就是西方的法律；所以我个人认为，法律无外乎人情，中国国情不须要西方似的所谓，法律，要以国情出发~~！
+                            [s] => 
+                            [p] => 81683SPH
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_8167RPLU
+                            [k] => 
+                        )
+
+                    [10] => stdClass Object
+                        (
+                            [f] => 网易云南省昆明市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=chscheese@163.com>xcheese</a>]： 
+                            [d] => 815O9B6N00014JB5
+                            [b] => 1楼的新闻出自何处，给个地址看看，墙外的也行。
+                            [a] => 0
+                            [n] => xcheese
+                            [l] => 1
+                            [tsn] => xcheese
+                            [ip] => 112.115.*.*
+                            [timg] => http://126.fm/B5Zoi
+                            [v] => 0
+                            [u] => chscheese@163.com
+                            [t] => 2012-05-11 00:17:39
+                            [p] => 816D1J6C
+                            [tid] => -8209313719078749103
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816D1J6C
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 [信道斯如] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => 942960296@qq.com
+                            [t] => 2012-05-10 23:39:55
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 那西方还没死刑呢
+                            [p] => 816ASGRA
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816ASGRA
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [f] => 网易广东省广州市网友 [伍毛他妈喜欢骑我] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => 632714215@qq.com
+                            [t] => 2012-05-10 23:36:09
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 麻痹的，你怎么不去死啊！这能够比较吗？
+                            [p] => 816ALJB7
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816ALJB7
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [f] => 网易湖南省娄底市网友 [花天公子] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => twrb2012@163.com
+                            [t] => 2012-05-10 23:13:36
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 十二年以是严刑了 一个杀了七十八人的欧洲人，只判了十六年，你知道去年欧洲那位的罪名是什么吗？ 是反人类罪~~但这样的也只判了十六年，这就是西方国家法律。 所以在这里，大家都是反对西方国家的，包容性法律； 大家都支持，中国的国情。
+                            [p] => 8169CAJH
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_8169CAJH
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 [freemanwest] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => freemanwest@163.com
+                            [t] => 2012-05-10 23:03:05
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 就算未成年也要看情节的严重程度吧，他又不是误伤。
+                            [p] => 8168P27A
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_8168P27A
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [9] => stdClass Object
+                        (
+                            [f] => 网易广东省惠州市网友 [Ailex] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => hhzdwan@163.com
+                            [t] => 2012-05-11 00:02:07
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 搞不明白“未成年人保护法”神马时候才能取消？因为年龄就不用对自己的行为所负责？再说现在的小孩都早熟！
+                            [p] => 816C5572
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816C5572
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [f] => 网易北京市网友 [注意安全] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => an_2001@163.com
+                            [t] => 2012-05-10 23:53:48
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 7L是个明白人，知道西方不买卖死刑器官
+                            [p] => 816BLTVO
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BLTVO
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                )
+
+            [6] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易河南省洛阳市网友 <span id=123.5.212.173_816CT817 class=cGray>ip：123.5.*.*：</span>
+                            [v] => 2
+                            [u] => hutuxuanfeng@163.com
+                            [t] => 2012-05-11 00:15:16
+                            [b] => 中国法律就是橡皮筋，能拉多长就看你的力道了！
+                            [a] => 0
+                            [p] => 816CT817
+                            [n] => hutuxuanfeng@163.com
+                            [l] => 0
+                            [ip] => 123.5.*.*
+                        )
+
+                )
+
+            [7] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易上海市嘉定区网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=hbp342304@163.com>铭馨博苑</a>]： 
+                            [b] => “官子两张BI ,有钱就水多多，没钱搞死你。这年头流行见面一句话：你有关系又有钱吗？？
+                            [a] => 0
+                            [n] => 铭馨博苑
+                            [l] => 0
+                            [tsn] => hbp342304
+                            [ip] => 114.82.*.*
+                            [timg] => http://img1.cache.netease.com/t/img/default80.png
+                            [v] => 0
+                            [u] => hbp342304@163.com
+                            [t] => 2012-05-11 00:14:48
+                            [p] => 816CSC6B
+                            [tid] => -4024695975129871949
+                        )
+
+                )
+
+            [8] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易上海市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=wzjandzl@163.com>可爱的笑笑</a>]： 
+                            [b] => 判12年，监狱里表现好点，3,4年就出来了。我太阳你大爷，这是什么法律。
+                            [a] => 0
+                            [n] => 可爱的笑笑
+                            [l] => 0
+                            [tsn] => wzjandzl
+                            [ip] => 223.166.*.*
+                            [timg] => http://img1.cache.netease.com/t/img/default80.png
+                            [v] => 2
+                            [u] => wzjandzl@163.com
+                            [t] => 2012-05-11 00:13:05
+                            [p] => 816CP7MO
+                            [tid] => 865943455299891078
+                        )
+
+                )
+
+            [9] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易河南省洛阳市网友 <span id=123.5.212.173_816CM1T8 class=cGray>ip：123.5.*.*：</span>
+                            [v] => 3
+                            [u] => hutuxuanfeng@163.com
+                            [t] => 2012-05-11 00:11:21
+                            [b] => 未成年人不能判死刑，无期徒刑还是可以滴。
+                            [a] => 0
+                            [p] => 816CM1T8
+                            [n] => hutuxuanfeng@163.com
+                            [l] => 0
+                            [ip] => 123.5.*.*
+                        )
+
+                )
+
+            [10] => stdClass Object
+                (
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易广西钦州市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=lb-1515@163.com>在职研究生学历</a>]： 
+                            [b] => 一条狗！！不想说多一个字！
+                            [a] => 0
+                            [n] => 在职研究生学历
+                            [l] => 0
+                            [tsn] => 6208743696
+                            [ip] => 116.9.*.*
+                            [timg] => http://126.fm/3IDRCZ
+                            [v] => 8
+                            [u] => lb-1515@163.com
+                            [t] => 2012-05-11 00:09:42
+                            [p] => 816CJ25Q
+                            [tid] => 3495451211357157579
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816CJ25Q
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易吉林省长春市网友 [skaterlee] 的原贴：
+                            [u] => lxn_2423@163.com
+                            [b] => 这小丫头貌似上学的时候真的不是什么好学生吧，不能说小伙是对的，可也不能保证说小丫头也是对的，得站在一个客观角度去看这个问题吧，毕竟我们不在事发现场，我们对当事人都不了解，一味的人云亦云，没啥意思真的
+                            [s] => 
+                            [p] => 816CJ25Q
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_816C10I3
+                            [k] => 
+                        )
+
+                )
+
+            [11] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易广东省广州市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=gzgod2008@163.com>爱民胜子</a>]： 
+                            [b] => 中国法律又一次保护官府人家，  又一次赤裸裸的强暴人民！
+                            [a] => 0
+                            [n] => 爱民胜子
+                            [l] => 0
+                            [tsn] => gzgod2008
+                            [ip] => 120.85.*.*
+                            [timg] => http://126.fm/3xGqN1
+                            [v] => 7
+                            [u] => gzgod2008@163.com
+                            [t] => 2012-05-11 00:08:52
+                            [p] => 816CHH54
+                            [tid] => -8186258662880206538
+                        )
+
+                )
+
+            [12] => stdClass Object
+                (
+                    [3] => stdClass Object
+                        (
+                            [f] => 网易河北省网友 [adamdx] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => adamdx@163.com
+                            [t] => 2012-05-10 23:40:23
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 我不是法律人士。<br>我记得的是，网络不参与，小陶甚至几乎要被取保候审。<br>罪认了吗？<br>有良心的人看到得是绞辩。<br>我主张的是，该查清的人，要去查清，给大家一个交待。<br>律师、受害人家属提了那么多问题，为何不采信，不采信的原因是什么？<br>利益要归于被告，如果该查的，该说的不去做，不做为，岂不全部要归于被告？<br>为什么王律师提出了问题，该回答的人没出来回答呢，也许你是该回答的人，可以为什么不在你该处的场合－－法庭内回答，说服律师与当事人呢？<br>王律师做了他该做的，你做了没有？<br>
+                            [p] => 816ATBL2
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816ATBL2
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易河北省网友 [adamdx] 的原贴：
+                            [u] => adamdx@163.com
+                            [t] => 2012-05-10 23:31:54
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 我不是法律人士。<br>我记得的是，网络不参与，小陶甚至几乎要被取保候审。<br>罪认了吗？<br>有良心的人看到得是绞辩。<br>我主张的是，该查清的人，要去查清，给大家一个交待。<br>律师、受害人家属提了那么多问题，为何不采信，不采信的原因是什么？<br>利益要归于被告，如果该查的，该说的不去做，不做为，岂不全部要归于被告？<br>为什么王律师提出了问题，该回答的人没出来回答呢，也许你是该回答的人，可以为什么不在你该处的场合－－法庭内回答，说服律师与当事人呢？<br>王律师做了他该做的，你做了没有？
+                            [p] => 816ADQDK
+                            [bi] => news3_bbs
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                            [pi] => 815O9B6N00014JB5_816ADQDK
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易安徽省合肥市网友 [半日谈] 的原贴：
+                            [u] => hxg_2001@163.com
+                            [b] => 就事论事，欢迎拍砖，笑对谩骂。。现在律师也真是为了钱不顾一切，原先王亚林在安徽刑辩领域属于比较客观的律师，现在也钻入牛角尖了，请问如果你担任辩护人是什么态度？两周之前，你辩护的罗国华案庭审还历历在目，您现在的思路不是客观分析证据，而是拼了命的博取同情。。。。打火机油多少烧掉了，从哪里补强？明知无法分析，煽动舆论干扰客观判断，但你忘了证据不清，利益要归于被告人的刑诉原则。故意杀人还是故意伤害，需要客观看待，“心中充满争议，双眼往来于事实与法律之间”，从客观生活常识和事实看，报复伤害的故意显而易见，杀人的故意则实属勉强。伤情重新鉴定还能超出重伤吗？显然不能，皮肤烧伤而伤残五级，就您做多年刑辩律师难道不知道是否客观吗？目的为了在舆论和当事人面前绕，索要更多钱财。认罪和有赔偿态度不是酌定从轻理由？为何罗国华案为什么你也这样辩？律师行业也毁了
+                            [s] => 
+                            [p] => 816ADQDK
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_8169HCCO
+                            [k] => 
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [f] => 网易河北省网友 <span id=27.188.167.133_816CCULG class=cGray>ip：27.188.*.*：</span>
+                            [d] => 815O9B6N00014JB5
+                            [b] => 扯远了。卡扎菲同这个案子没关系。<br>我是见不得一些人，对弱者，受害者不同情不支助，围观罢了，还落井下石，混淆是非
+                            [a] => 0
+                            [n] => adamdx
+                            [l] => 1
+                            [tsn] => 9037084449
+                            [ip] => 27.188.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 1
+                            [u] => adamdx@163.com
+                            [t] => 2012-05-11 00:06:22
+                            [p] => 816CCULG
+                            [tid] => -5366110562477827090
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816CCULG
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [f] => 网易山西省阳泉市网友 [ttzl007] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => ttzl007@163.com
+                            [t] => 2012-05-10 23:56:26
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 法棺收钱办案都知道，世界文明中国法棺谁送的多谁赢官司，谁官大谁赢官司。地球人都知道，这个流氓D不除，人类永远生活在苦难。我坚信世界人民一定可以看到中国的卡扎菲被抛尸荒野。死得不如一只猪
+                            [p] => 816BQOIN
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BQOIN
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 [过路打酱油的] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => stelae@163.com
+                            [t] => 2012-05-10 23:48:05
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 肯定做了!你以为个个都是拿钱发呆的货?!这可是按规则办事的,拿人钱财,替人消灾!
+                            [p] => 816BBF42
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BBF42
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                )
+
+            [13] => stdClass Object
+                (
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易广东省广州市天河区网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=fgyz1987@163.com>再见杨柳</a>]： 
+                            [b] => 你不了解，又说她不是什么好学生。你是什么意思？
+                            [a] => 0
+                            [n] => 再见杨柳
+                            [l] => 0
+                            [tsn] => fgyz1987
+                            [ip] => 58.62.*.*
+                            [timg] => http://img1.cache.netease.com/t/img/default80.png
+                            [v] => 0
+                            [u] => fgyz1987@163.com
+                            [t] => 2012-05-11 00:06:00
+                            [p] => 816CC8AN
+                            [tid] => 3621923167140821170
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816CC8AN
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易吉林省长春市网友 [skaterlee] 的原贴：
+                            [u] => lxn_2423@163.com
+                            [b] => 这小丫头貌似上学的时候真的不是什么好学生吧，不能说小伙是对的，可也不能保证说小丫头也是对的，得站在一个客观角度去看这个问题吧，毕竟我们不在事发现场，我们对当事人都不了解，一味的人云亦云，没啥意思真的
+                            [s] => 
+                            [p] => 816CC8AN
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_816C10I3
+                            [k] => 
+                        )
+
+                )
+
+            [14] => stdClass Object
+                (
+                    [3] => stdClass Object
+                        (
+                            [f] => 网易浙江省台州市网友(115.201.*.*)的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => zjtzsr@163.com
+                            [t] => 2012-05-10 23:49:05
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 楼上两畜生
+                            [p] => 816BDA22
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BDA22
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易宁夏网友(111.112.*.*)的原贴：
+                            [u] => hnqjsj@163.com
+                            [t] => 2012-05-10 23:42:12
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 一楼说的对，要不是她想多享受几个男人会有这个结果吗？多享受就多享受啊，还拒绝这个，多一个也不多的事情，人家小男孩动情了反而涮人家，这分明是自找的事情，小男孩冤枉啊。。。。。。。
+                            [p] => 816B0LVR
+                            [bi] => news3_bbs
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                            [pi] => 815O9B6N00014JB5_816B0LVR
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易山西省太原市网友 [阿猫0002] 的原贴：
+                            [u] => xinlindao@163.com
+                            [b] => 你还气死了？你个小浪蹄子，放着中学不好好上，如果不是你早早地迫不及待打开两腿分叉处，到处勾引男人，会有今天，你不仅仅毁了你的家庭你的父母，还毁另一个本来有着大好前途的优秀男青年和他的家庭
+                            [s] => 
+                            [p] => 816B0LVR
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_815SIRKC
+                            [k] => 
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [f] => 网易重庆市网友 <span id=211.162.208.53_816CBMA7 class=cGray>ip：211.162.*.*：</span>
+                            [d] => 815O9B6N00014JB5
+                            [b] => 好啊好啊，先判个12年，趁没人注意了慢慢再减刑，说不定五六年就出来，才二十三四岁，可以直接给安排工作了，还尼玛省了几年的伙食费。不过我不知道他出来再遇到周岩的时候，会是一种什么样的情景呢，一个差点烧死她的人，如此奇迹般的又回来了！
+                            [a] => 0
+                            [n] => aprilsky11
+                            [l] => 0
+                            [tsn] => 4025778906
+                            [ip] => 211.162.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 1
+                            [u] => aprilsky11@163.com
+                            [t] => 2012-05-11 00:05:41
+                            [p] => 816CBMA7
+                            [tid] => 2100876846448815220
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816CBMA7
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [f] => 网易亚太地区网友 [163issb334] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => 163issb334@163.com
+                            [t] => 2012-05-10 23:54:44
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 赏1楼2楼几个钱,这两狗能把他们的亲妈日了
+                            [p] => 816BNKKR
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BNKKR
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                )
+
+            [15] => stdClass Object
+                (
+                    [3] => stdClass Object
+                        (
+                            [f] => 网易湖南省娄底市网友 [花天公子] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => twrb2012@163.com
+                            [t] => 2012-05-10 22:55:48
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 按法律公平来看，对一位未成年人，判十二年，这还不重？ 但要按中国国情来说，这就是人云亦云了； <br>在这里看大家是支持法律，还是选择国情； 以后也就不要再谈什么法律公正了，一切以国情出发；
+                            [p] => 8168BNL5
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_8168BNL5
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易广东省广州市网友 [闪了舌头] 的原贴：
+                            [u] => happy88@126.com
+                            [t] => 2012-05-10 22:51:31
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 你想说什么，说12年判重了呗？
+                            [p] => 81683SPH
+                            [bi] => news3_bbs
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                            [pi] => 815O9B6N00014JB5_81683SPH
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易湖南省娄底市网友 [花天公子] 的原贴：
+                            [u] => twrb2012@163.com
+                            [b] => 欧洲去年有一位高中生，枪杀了78人，只判了十六年，这就是西方的法律；所以我个人认为，法律无外乎人情，中国国情不须要西方似的所谓，法律，要以国情出发~~！
+                            [s] => 
+                            [p] => 81683SPH
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_8167RPLU
+                            [k] => 
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 [信道斯如] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => 942960296@qq.com
+                            [t] => 2012-05-10 23:39:55
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 那西方还没死刑呢
+                            [p] => 816ASGRA
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816ASGRA
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [f] => 网易广东省广州市网友 [伍毛他妈喜欢骑我] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => 632714215@qq.com
+                            [t] => 2012-05-10 23:36:09
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 麻痹的，你怎么不去死啊！这能够比较吗？
+                            [p] => 816ALJB7
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816ALJB7
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [f] => 网易湖南省娄底市网友 [花天公子] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => twrb2012@163.com
+                            [t] => 2012-05-10 23:13:36
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 十二年以是严刑了 一个杀了七十八人的欧洲人，只判了十六年，你知道去年欧洲那位的罪名是什么吗？ 是反人类罪~~但这样的也只判了十六年，这就是西方国家法律。 所以在这里，大家都是反对西方国家的，包容性法律； 大家都支持，中国的国情。
+                            [p] => 8169CAJH
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_8169CAJH
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 [freemanwest] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => freemanwest@163.com
+                            [t] => 2012-05-10 23:03:05
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 就算未成年也要看情节的严重程度吧，他又不是误伤。
+                            [p] => 8168P27A
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_8168P27A
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [9] => stdClass Object
+                        (
+                            [f] => 网易广东省惠州市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=hhzdwan@163.com>Ailex</a>]： 
+                            [d] => 815O9B6N00014JB5
+                            [b] => 搞不明白“未成年人保护法”神马时候才能取消？因为年龄就不用对自己的行为所负责？再说现在的小孩都早熟！
+                            [a] => 0
+                            [n] => Ailex
+                            [l] => 0
+                            [tsn] => hhzdwan
+                            [ip] => 113.83.*.*
+                            [timg] => http://img1.cache.netease.com/t/img/default80.png
+                            [v] => 0
+                            [u] => hhzdwan@163.com
+                            [t] => 2012-05-11 00:02:07
+                            [p] => 816C5572
+                            [tid] => 8389067257343761965
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816C5572
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [f] => 网易北京市网友 [注意安全] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => an_2001@163.com
+                            [t] => 2012-05-10 23:53:48
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 7L是个明白人，知道西方不买卖死刑器官
+                            [p] => 816BLTVO
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BLTVO
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                )
+
+            [16] => stdClass Object
+                (
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易辽宁省营口市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=kkwoshi@yeah.net>kkwoshi0</a>]： 
+                            [b] => 事实证明，以后这种问题，法律解决不了自己解决。从被告到法官，，，多弄一个赚一个
+                            [a] => 0
+                            [n] => kkwoshi0
+                            [l] => 0
+                            [tsn] => 9136541736
+                            [ip] => 123.187.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 2
+                            [u] => kkwoshi@yeah.net
+                            [t] => 2012-05-11 00:01:46
+                            [p] => 816C4GT2
+                            [tid] => -765789878150691256
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816C4GT2
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易广东省网友 [警告你艹你沒资格代表我] 的原贴：
+                            [u] => 501277299@qq.com
+                            [b] => 不判死刑不罢休
+                            [s] => 
+                            [p] => 816C4GT2
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_815OKTV9
+                            [k] => 
+                        )
+
+                )
+
+            [17] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易尼泊尔网友 <span id=113.199.132.83_816C4FVI class=cGray>ip：113.199.*.*：</span>
+                            [v] => 5
+                            [u] => 1987_29@163.com
+                            [t] => 2012-05-11 00:01:45
+                            [b] => 小畜生毁了人家女孩子的一生，法律就该让他在监狱里过一辈子。
+                            [a] => 0
+                            [p] => 816C4FVI
+                            [n] => 1987_29@163.com
+                            [l] => 0
+                            [ip] => 113.199.*.*
+                        )
+
+                )
+
+            [18] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 <span id=218.194.33.56_816C45OK class=cGray>ip：218.194.*.*：</span>
+                            [v] => 4
+                            [u] => jh06110108@126.com
+                            [t] => 2012-05-11 00:01:35
+                            [b] => 看到专家说话就恶心反感
+                            [a] => 0
+                            [p] => 816C45OK
+                            [n] => jh06110108@126.com
+                            [l] => 0
+                            [ip] => 218.194.*.*
+                        )
+
+                )
+
+            [19] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 <span id=110.184.91.101_816C2P2P class=cGray>ip：110.184.*.*：</span>
+                            [b] => 好老爸！好专家，好法官！！！
+                            [a] => 0
+                            [n] => dlj0830
+                            [l] => 0
+                            [tsn] => 8276122746
+                            [ip] => 110.184.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 7
+                            [u] => dlj0830@163.com
+                            [t] => 2012-05-11 00:00:49
+                            [p] => 816C2P2P
+                            [tid] => -7002557047275388566
+                        )
+
+                )
+
+            [20] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易吉林省长春市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=lxn_2423@163.com>skaterlee</a>]： 
+                            [b] => 这小丫头貌似上学的时候真的不是什么好学生吧，不能说小伙是对的，可也不能保证说小丫头也是对的，得站在一个客观角度去看这个问题吧，毕竟我们不在事发现场，我们对当事人都不了解，一味的人云亦云，没啥意思真的
+                            [a] => 0
+                            [n] => skaterlee
+                            [l] => 0
+                            [tsn] => skaterlee
+                            [ip] => 113.213.*.*
+                            [timg] => http://126.fm/NHxsb
+                            [v] => 1
+                            [u] => lxn_2423@163.com
+                            [t] => 2012-05-10 23:59:52
+                            [p] => 816C10I3
+                            [tid] => -437704257853641838
+                        )
+
+                )
+
+            [21] => stdClass Object
+                (
+                    [3] => stdClass Object
+                        (
+                            [f] => 网易广东省广州市网友 [junwen38] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => junwen38@163.com
+                            [t] => 2012-05-10 20:35:39
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 你们这群网络暴民何尝不是根据心情判案呢，还好你们没有权利判案，要不然出来的冤假错案可就多了。
+                            [p] => 8160B3BF
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_8160B3BF
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易陕西省西安市网友 [开心播播] 的原贴：
+                            [u] => suxi911@163.com
+                            [t] => 2012-05-10 20:21:38
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 这马屁拍的真有水平！<br>司法机关是根据法律判案还是根据心情判案？既然你说事根据心情判案又那来的基本公正？前后矛盾！
+                            [p] => 815VHDVF
+                            [bi] => news3_bbs
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                            [pi] => 815O9B6N00014JB5_815VHDVF
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易安徽省网友 [hzlilawyer] 的原贴：
+                            [u] => hzlilawyer@163.com
+                            [b] => 这个案件被代理律师炒过头了，司法机关很烦这种炒作所以很可能就是不重判，当然客观上说这个量刑还是基本公正
+                            [s] => 
+                            [p] => 815VHDVF
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_815UR7P6
+                            [k] => 
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [f] => 网易福建省莆田市网友 <span id=222.77.245.198_816BUENQ class=cGray>ip：222.77.*.*：</span>
+                            [d] => 815O9B6N00014JB5
+                            [b] => 支持楼上观点，他们也不是什么暴民，只敢在网络上发无用的牢骚，在现实中，可能是最老实的良民啊。
+                            [a] => 0
+                            [n] => JackeyRoe
+                            [l] => 0
+                            [tsn] => 3688305150
+                            [ip] => 222.77.*.*
+                            [timg] => http://126.fm/2Gzfd3
+                            [v] => 1
+                            [u] => jackeyroe@163.com
+                            [t] => 2012-05-10 23:58:28
+                            [p] => 816BUENQ
+                            [tid] => 9048588488335221120
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BUENQ
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [f] => 网易中国网友(49.91.*.*)的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => 247442632@qq.com
+                            [t] => 2012-05-10 23:51:59
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 顶你，现在网络暴民都是些在现实中的失败者，把对现实的不满发泄到网上，唯恐天下不乱，这样的人才是社会的不稳定因素，才是阻碍中国发展的绊脚石
+                            [p] => 816BIJ4G
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BIJ4G
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                )
+
+            [22] => stdClass Object
+                (
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易甘肃省兰州市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=happy__vampire@126.com>云琦</a>]： 
+                            [b] => 首先你的评论有一点核心错误，法律是用来保护每一个公民的基本权利的，这和这个公民本身是好是坏无关，难道他是小混混哪天被别人杀了，那个杀人犯就不用判刑了？但有一点我也是同意的，周家确实不应该虚构什么官二代之类的说辞来骗取同情，法律法律凡事都应该依照法律来办事而不是靠舆论的导向。因为我们也可能通过媒体只了解到一部分事实，而导致不公正的结论。
+                            [a] => 0
+                            [n] => 云琦
+                            [l] => 0
+                            [tsn] => 3210519089
+                            [ip] => 118.181.*.*
+                            [timg] => http://126.fm/2ny8RV
+                            [v] => 1
+                            [u] => happy__vampire@126.com
+                            [t] => 2012-05-10 23:58:07
+                            [p] => 816BTR19
+                            [tid] => -1437838618234690035
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BTR19
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易安徽省合肥市网友 [HANS39] 的原贴：
+                            [u] => hanfenglong@126.com
+                            [b] => 这周家十足的网闹！在网上造谣官二代、虚构事实骂公安不积极介入、骂检察起诉、骂法院判偏、骂媒体不登他的言论。人们有点同情心都被你闹凉了。那个混蛋罪犯判入狱，你家女儿被混蛋罪犯烧了，都不是好东西，两个混混子。真的不值得同情！！有什么样的家庭就有什么女儿，周网闹，为了几个臭钱，什么脸面都不要了！！
+                            [s] => 
+                            [p] => 816BTR19
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_8169NUF2
+                            [k] => 
+                        )
+
+                )
+
+            [23] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易广东省深圳市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=neu_stulq@163.com>坎帕斯醉爱</a>]： 
+                            [b] => 这个社会让人失望透顶。
+                            [a] => 0
+                            [n] => 坎帕斯醉爱
+                            [l] => 0
+                            [tsn] => 0256091414
+                            [ip] => 116.25.*.*
+                            [timg] => http://126.fm/3897nW
+                            [v] => 8
+                            [u] => neu_stulq@163.com
+                            [t] => 2012-05-10 23:57:51
+                            [p] => 816BTBKD
+                            [tid] => -107131433773458061
+                        )
+
+                )
+
+            [24] => stdClass Object
+                (
+                    [3] => stdClass Object
+                        (
+                            [f] => 网易江苏省连云港市网友 [miaoshariza] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => miaoshariza@163.com
+                            [t] => 2012-05-10 19:42:02
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 1楼这么歧视女性，是母猪生的吧？
+                            [p] => 815T8TKG
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_815T8TKG
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易韩国网友 [李宇春V曾哥] 的原贴：
+                            [u] => zhihui3409@163.com
+                            [t] => 2012-05-10 19:34:49
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 1楼煞笔,儿子也是犯罪分子
+                            [p] => 815SRNA3
+                            [bi] => news3_bbs
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                            [pi] => 815O9B6N00014JB5_815SRNA3
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易山西省太原市网友 [阿猫0002] 的原贴：
+                            [u] => xinlindao@163.com
+                            [b] => 你还气死了？你个小浪蹄子，放着中学不好好上，如果不是你早早地迫不及待打开两腿分叉处，到处勾引男人，会有今天，你不仅仅毁了你的家庭你的父母，还毁另一个本来有着大好前途的优秀男青年和他的家庭
+                            [s] => 
+                            [p] => 815SRNA3
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_815SIRKC
+                            [k] => 
+                        )
+
+                    [10] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 [信道斯如] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => 942960296@qq.com
+                            [t] => 2012-05-10 23:40:59
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 别说她还是个学生，就算她是个妓女就应该被毁容嘛？
+                            [p] => 816AUF4Q
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816AUF4Q
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [f] => 网易北京市网友 [asshole123] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => lile67@163.com
+                            [t] => 2012-05-10 20:07:05
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 告诉你 这个女的也不是好鸟，她又N个男友，那方面好像比较乱。再说这种事情不涉及大是大非，不可能不公正。网友很多事情是不能看表面的
+                            [p] => 815UMPDN
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_815UMPDN
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [f] => 网易广东省广州市越秀区网友 [pretencer111] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => pretencer111@163.com
+                            [t] => 2012-05-10 19:59:08
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 4楼,我要跟你PK,你侮辱了狗!
+                            [p] => 815U87SN
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_815U87SN
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [f] => 网易山西省太原市网友 [zys5188666] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => zys5188666@163.com
+                            [t] => 2012-05-10 19:49:47
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 3楼不要侮辱狗好吗！
+                            [p] => 815TN3TH
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_815TN3TH
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [f] => 网易广东省广州市白云区网友 [我为歌狂4] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => tangyan927@163.com
+                            [t] => 2012-05-10 19:44:12
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 1楼，是狗生的。
+                            [p] => 815TCT4I
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_815TCT4I
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [9] => stdClass Object
+                        (
+                            [f] => 网易湖北省孝感市网友(58.51.*.*)的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => opera1979m@163.com
+                            [t] => 2012-05-10 23:34:51
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 7楼,你麻痹说啥呢?男的坐牢，女的毁了青春，谁都立马的不好过，你至于说那话么？
+                            [p] => 816AJ81B
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816AJ81B
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [f] => 网易河南省洛阳市网友(61.233.*.*)的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => bobcatly@163.com
+                            [t] => 2012-05-10 23:23:13
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 好像是什么意思？你又是怎么看到里面的？
+                            [p] => 8169TU6D
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_8169TU6D
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [11] => stdClass Object
+                        (
+                            [f] => 网易亚太地区网友 [群狼微笑] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => fyzhr@163.com
+                            [t] => 2012-05-10 23:53:05
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 7L、你的愚蠢让人难过、
+                            [p] => 816BKKCM
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BKKCM
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [12] => stdClass Object
+                        (
+                            [f] => 网易广东省惠州市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=wudongming16@163.com>小淫霸</a>]： 
+                            [d] => 815O9B6N00014JB5
+                            [b] => 法律面前不要讲道德
+                            [a] => 0
+                            [n] => 小淫霸
+                            [l] => 0
+                            [tsn] => 9786307682
+                            [ip] => 58.255.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 2
+                            [u] => wudongming16@163.com
+                            [t] => 2012-05-10 23:57:08
+                            [p] => 816BS1H7
+                            [tid] => -5487779978658525091
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BS1H7
+                        )
+
+                )
+
+            [25] => stdClass Object
+                (
+                    [3] => stdClass Object
+                        (
+                            [f] => 网易河北省网友 [adamdx] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => adamdx@163.com
+                            [t] => 2012-05-10 23:40:23
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 我不是法律人士。<br>我记得的是，网络不参与，小陶甚至几乎要被取保候审。<br>罪认了吗？<br>有良心的人看到得是绞辩。<br>我主张的是，该查清的人，要去查清，给大家一个交待。<br>律师、受害人家属提了那么多问题，为何不采信，不采信的原因是什么？<br>利益要归于被告，如果该查的，该说的不去做，不做为，岂不全部要归于被告？<br>为什么王律师提出了问题，该回答的人没出来回答呢，也许你是该回答的人，可以为什么不在你该处的场合－－法庭内回答，说服律师与当事人呢？<br>王律师做了他该做的，你做了没有？<br>
+                            [p] => 816ATBL2
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816ATBL2
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易河北省网友 [adamdx] 的原贴：
+                            [u] => adamdx@163.com
+                            [t] => 2012-05-10 23:31:54
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 我不是法律人士。<br>我记得的是，网络不参与，小陶甚至几乎要被取保候审。<br>罪认了吗？<br>有良心的人看到得是绞辩。<br>我主张的是，该查清的人，要去查清，给大家一个交待。<br>律师、受害人家属提了那么多问题，为何不采信，不采信的原因是什么？<br>利益要归于被告，如果该查的，该说的不去做，不做为，岂不全部要归于被告？<br>为什么王律师提出了问题，该回答的人没出来回答呢，也许你是该回答的人，可以为什么不在你该处的场合－－法庭内回答，说服律师与当事人呢？<br>王律师做了他该做的，你做了没有？
+                            [p] => 816ADQDK
+                            [bi] => news3_bbs
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                            [pi] => 815O9B6N00014JB5_816ADQDK
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易安徽省合肥市网友 [半日谈] 的原贴：
+                            [u] => hxg_2001@163.com
+                            [b] => 就事论事，欢迎拍砖，笑对谩骂。。现在律师也真是为了钱不顾一切，原先王亚林在安徽刑辩领域属于比较客观的律师，现在也钻入牛角尖了，请问如果你担任辩护人是什么态度？两周之前，你辩护的罗国华案庭审还历历在目，您现在的思路不是客观分析证据，而是拼了命的博取同情。。。。打火机油多少烧掉了，从哪里补强？明知无法分析，煽动舆论干扰客观判断，但你忘了证据不清，利益要归于被告人的刑诉原则。故意杀人还是故意伤害，需要客观看待，“心中充满争议，双眼往来于事实与法律之间”，从客观生活常识和事实看，报复伤害的故意显而易见，杀人的故意则实属勉强。伤情重新鉴定还能超出重伤吗？显然不能，皮肤烧伤而伤残五级，就您做多年刑辩律师难道不知道是否客观吗？目的为了在舆论和当事人面前绕，索要更多钱财。认罪和有赔偿态度不是酌定从轻理由？为何罗国华案为什么你也这样辩？律师行业也毁了
+                            [s] => 
+                            [p] => 816ADQDK
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_8169HCCO
+                            [k] => 
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [f] => 网易山西省阳泉市网友 <span id=124.166.245.195_816BQOIN class=cGray>ip：124.166.*.*：</span>
+                            [d] => 815O9B6N00014JB5
+                            [b] => 法棺收钱办案都知道，世界文明中国法棺谁送的多谁赢官司，谁官大谁赢官司。地球人都知道，这个流氓D不除，人类永远生活在苦难。我坚信世界人民一定可以看到中国的卡扎菲被抛尸荒野。死得不如一只猪
+                            [a] => 0
+                            [n] => ttzl007
+                            [l] => 0
+                            [tsn] => 5282186190
+                            [ip] => 124.166.*.*
+                            [timg] => http://126.fm/42bMuQ
+                            [v] => 1
+                            [u] => ttzl007@163.com
+                            [t] => 2012-05-10 23:56:29
+                            [p] => 816BQOIN
+                            [tid] => -2720154399229276078
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BQOIN
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 [过路打酱油的] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => stelae@163.com
+                            [t] => 2012-05-10 23:48:05
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 肯定做了!你以为个个都是拿钱发呆的货?!这可是按规则办事的,拿人钱财,替人消灾!
+                            [p] => 816BBF42
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BBF42
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                )
+
+            [26] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易浙江省衢州市网友 <span id=124.91.209.227_816BQHGQ class=cGray>ip：124.91.*.*：</span>
+                            [b] => 应该是无期的，法律在中国让大家看笑话了。努力移民吧
+                            [a] => 0
+                            [n] => yh4219
+                            [l] => 0
+                            [tsn] => 6018420809
+                            [ip] => 124.91.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 4
+                            [u] => yh4219@163.com
+                            [t] => 2012-05-10 23:56:22
+                            [p] => 816BQHGQ
+                            [tid] => 1842935897796209934
+                        )
+
+                )
+
+            [27] => stdClass Object
+                (
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易北京市网友 <span id=123.125.157.163_816BPLLK class=cGray>ip：123.125.*.*：</span>
+                            [b] => 受害人周岩在听到判决后称气死我了，干脆判当庭释放算了。
+                            [a] => 0
+                            [n] => longriver222
+                            [l] => 0
+                            [tsn] => 9818388084
+                            [ip] => 123.125.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 2
+                            [u] => longriver2221@126.com
+                            [t] => 2012-05-10 23:55:51
+                            [p] => 816BPLLK
+                            [tid] => -2160539803017500118
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BPLLK
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易上海市网友(180.174.*.*)的原贴：
+                            [u] => jyhf1986@163.com
+                            [b] => 呵呵！这样都不判死，真服了
+                            [s] => 
+                            [p] => 816BPLLK
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_815P1QR8
+                            [k] => 
+                        )
+
+                )
+
+            [28] => stdClass Object
+                (
+                    [3] => stdClass Object
+                        (
+                            [f] => 网易浙江省台州市网友(115.201.*.*)的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => zjtzsr@163.com
+                            [t] => 2012-05-10 23:49:05
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 楼上两畜生
+                            [p] => 816BDA22
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BDA22
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易宁夏网友(111.112.*.*)的原贴：
+                            [u] => hnqjsj@163.com
+                            [t] => 2012-05-10 23:42:12
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 一楼说的对，要不是她想多享受几个男人会有这个结果吗？多享受就多享受啊，还拒绝这个，多一个也不多的事情，人家小男孩动情了反而涮人家，这分明是自找的事情，小男孩冤枉啊。。。。。。。
+                            [p] => 816B0LVR
+                            [bi] => news3_bbs
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                            [pi] => 815O9B6N00014JB5_816B0LVR
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易山西省太原市网友 [阿猫0002] 的原贴：
+                            [u] => xinlindao@163.com
+                            [b] => 你还气死了？你个小浪蹄子，放着中学不好好上，如果不是你早早地迫不及待打开两腿分叉处，到处勾引男人，会有今天，你不仅仅毁了你的家庭你的父母，还毁另一个本来有着大好前途的优秀男青年和他的家庭
+                            [s] => 
+                            [p] => 816B0LVR
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_815SIRKC
+                            [k] => 
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [f] => 网易亚太地区网友 <span id=171.123.20.220_816BNKKR class=cGray>ip：171.123.*.*：</span>
+                            [d] => 815O9B6N00014JB5
+                            [b] => 赏1楼2楼几个钱,这两狗能把他们的亲妈日了
+                            [a] => 0
+                            [n] => 163issb334
+                            [l] => 0
+                            [tsn] => 3046019826
+                            [ip] => 171.123.*.*
+                            [timg] => http://mimg.126.net/p/butter/1008031648/img/face_big.gif
+                            [v] => 11
+                            [u] => 163issb334@163.com
+                            [t] => 2012-05-10 23:54:45
+                            [p] => 816BNKKR
+                            [tid] => -7999436169794856060
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BNKKR
+                        )
+
+                )
+
+            [29] => stdClass Object
+                (
+                    [3] => stdClass Object
+                        (
+                            [f] => 网易湖南省娄底市网友 [花天公子] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => twrb2012@163.com
+                            [t] => 2012-05-10 22:55:48
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 按法律公平来看，对一位未成年人，判十二年，这还不重？ 但要按中国国情来说，这就是人云亦云了； <br>在这里看大家是支持法律，还是选择国情； 以后也就不要再谈什么法律公正了，一切以国情出发；
+                            [p] => 8168BNL5
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_8168BNL5
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [f] => 网易广东省广州市网友 [闪了舌头] 的原贴：
+                            [u] => happy88@126.com
+                            [t] => 2012-05-10 22:51:31
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 你想说什么，说12年判重了呗？
+                            [p] => 81683SPH
+                            [bi] => news3_bbs
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                            [pi] => 815O9B6N00014JB5_81683SPH
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [f] => 网易湖南省娄底市网友 [花天公子] 的原贴：
+                            [u] => twrb2012@163.com
+                            [b] => 欧洲去年有一位高中生，枪杀了78人，只判了十六年，这就是西方的法律；所以我个人认为，法律无外乎人情，中国国情不须要西方似的所谓，法律，要以国情出发~~！
+                            [s] => 
+                            [p] => 81683SPH
+                            [bi] => 
+                            [pi] => 815O9B6N00014JB5_8167RPLU
+                            [k] => 
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 [信道斯如] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => 942960296@qq.com
+                            [t] => 2012-05-10 23:39:55
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 那西方还没死刑呢
+                            [p] => 816ASGRA
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816ASGRA
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [f] => 网易广东省广州市网友 [伍毛他妈喜欢骑我] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => 632714215@qq.com
+                            [t] => 2012-05-10 23:36:09
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 麻痹的，你怎么不去死啊！这能够比较吗？
+                            [p] => 816ALJB7
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816ALJB7
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [f] => 网易湖南省娄底市网友 [花天公子] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => twrb2012@163.com
+                            [t] => 2012-05-10 23:13:36
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 十二年以是严刑了 一个杀了七十八人的欧洲人，只判了十六年，你知道去年欧洲那位的罪名是什么吗？ 是反人类罪~~但这样的也只判了十六年，这就是西方国家法律。 所以在这里，大家都是反对西方国家的，包容性法律； 大家都支持，中国的国情。
+                            [p] => 8169CAJH
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_8169CAJH
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [f] => 网易四川省成都市网友 [freemanwest] 的原贴：
+                            [d] => 815O9B6N00014JB5
+                            [u] => freemanwest@163.com
+                            [t] => 2012-05-10 23:03:05
+                            [s] => 合肥少女毁容案一审宣判 受害人：气死我了
+                            [b] => 就算未成年也要看情节的严重程度吧，他又不是误伤。
+                            [p] => 8168P27A
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_8168P27A
+                            [k] => http://news.163.com/12/0510/18/815O9B6N00014JB5.html
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [f] => 网易广西南宁市网友&nbsp;[<a href=http://tie.163.com/reply/myaction.jsp?action=reply&username=290592549@163.com>八转琉璃</a>]： 
+                            [d] => 815O9B6N00014JB5
+                            [b] => 16÷78=？尼玛的，我小学没读好，麻烦一楼帮我算一下杀个人要坐多久的牢。
+                            [a] => 0
+                            [n] => 八转琉璃
+                            [l] => 1
+                            [tsn] => 290592549
+                            [ip] => 222.216.*.*
+                            [timg] => http://img1.cache.netease.com/t/img/default80.png
+                            [v] => 1
+                            [u] => 290592549@163.com
+                            [t] => 2012-05-10 23:54:40
+                            [p] => 816BNG5J
+                            [tid] => -7649289606632343598
+                            [bi] => news3_bbs
+                            [pi] => 815O9B6N00014JB5_816BNG5J
+                        )
+
+                )
+
+        )
+
+)
+
+

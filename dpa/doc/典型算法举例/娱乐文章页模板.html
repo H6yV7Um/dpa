@@ -1,0 +1,763 @@
+<!DOCTYPE HTML>
+<!--[${_PROJECT_id},${_PROJECT_TABLE_id},${id}] published at ${_SYSTEM_date} ${_SYSTEM_time} by ${_USER_id}-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="${文档标题},${_PROJECT_db_name}" />
+<meta name="description" content="${文档标题},${_PROJECT_db_name}" />
+<title>${文档标题}_${_PROJECT_name_cn}_${_PROJECT_website_name_cn}</title>
+<style type="text/css">
+<!--
+/* 全局样式begin */
+html{color:#000;background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body{background:#fff;font-size:12px; font-family:"宋体";}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+
+a{text-decoration:underline;}
+a:link{color:#009;}
+a:visited{color:#800080;}
+a:hover,a:active,a:focus{color:#c00;}
+
+.ss-no-ignore-whitespace{white-space:pre-wrap;white-space:-moz-pre-wrap;word-wrap:break-word;*white-space:pre}
+
+.clearit{clear:both;}
+.clearfix:after{content:"ffff";display:block;height:0;visibility:hidden;clear:both;}
+.clearfix{zoom:1;}
+/* 全局样式 end */
+
+/* header begin */
+#gog{padding:3px 8px 0;background:#fff}
+#gbar,#guser{padding-top:1px !important}
+#gbar{float:left;height:22px}
+#guser{padding-bottom:7px !important;text-align:right}
+.gbh{border-top:1px solid #c9d7f1;font-size:1px;height:0;position:absolute;top:24px;width:100%}
+.gb1{margin-right:.5em;zoom:1}
+/* header end */
+
+/* header center footer */
+#header ,#centers ,#footer{ margin:0 auto; clear:both;}
+
+/* footer */
+.footer{margin: 20px 0;text-align: center;line-height: 24px;color:#333;}
+.footer a{color:#333;}
+
+
+/* ====================== wrap ====================== */
+#wrap{margin:0 auto;}
+.wrap { width:950px;overflow:hidden;position:relative; margin-top:26px; padding-top: 26px; }
+
+
+
+/* ====================== main content ====================== */
+.main { background:url(http://img3.ni9ni.com/book/kh/2012/0118/dushu_mainBg.gif) left repeat-y; width:950px; overflow:hidden; border-top:1px solid #c2d9f2; }
+
+/* === main content left === */
+.main .mainL { width:690px; float:left; }
+/* === main content right === */
+.main .mainR { width:250px; float:right; border-top:10px solid #fff; }
+.main .mainR ul { padding:10px 15px; }
+.main .mainR li { padding-left:9px; line-height:22px; }
+.main .mainR li a { color:#009; }
+.main .mainR li a:hover { color:#f00; }
+/* 二级导航 */
+.subMenu { margin:8px 24px 0; border-bottom:1px solid #c8d8f2; line-height:37px; height:33px; overflow:hidden; }
+.subMenu img { float:left; margin-right:10px; }
+.subMenu a { color:#023296; }
+.subMenu a:hover { color:#f00; }
+/* 文章标题 */
+.mainContent { border-bottom:1px solid #c2d9f2; }
+.mainContent h1 { line-height:38px; text-align:center; color:#03005c; font-size:20px; font-weight:bold; margin-top:18px; }
+
+.mainContent .secTitle { text-align:center; line-height:25px; margin-bottom:10px; }
+.mainContent .secTitle em { font-style:normal; margin:0 15px; }
+
+
+
+/* 每篇日志的总框架 */
+/*.textbox{margin-bottom: 8px;border: 1px solid #bad1da;background-color: #F7FBFF;}*/
+
+.textbox-content{
+	word-wrap: break-word;
+	padding: 10px;
+	font-size:16px;
+}
+.tags {
+	padding-top: 1px;
+	padding-bottom: 3px;
+	font-size: 11px;
+	color: #4c9bb0;
+	text-align:left;
+	padding-left: 17px;
+	background-color: #eaeff0;
+	border-bottom: 1px solid #bad1da;
+}
+/****** UBB Code Custom Styles ******/
+.code {
+	word-wrap: break-all;
+	border-left: 3px dashed #4c9bb0;
+	background-color: #EBEBEB;
+	color: #000000;
+	margin: 5px;
+	padding: 10px;
+}
+.quote {
+	border-left: 0px dashed #D6C094;
+	margin: 10px;
+    margin-bottom:0px;
+	border: 1px dashed #00a0c6;
+}
+.quote-title {
+	background-color: #edf4f6;
+	border-bottom: 1px dashed #00a0c6 !important;
+	border-bottom: 1px dotted #00a0c6;
+	padding: 5px;
+	font-weight: bold;
+	color: #4c9bb0;
+}
+.quote-title img {
+	padding-right: 3px;
+}
+.quote-content {
+	word-wrap: break-all;
+	color: #000000;
+	padding: 10px; 
+	background-color: #ffffff;
+	border: 1px dashed #edf4f6;
+	border-top: 0px;
+}
+
+/* comment begin */
+.replies .reply{text-align:left;padding:16px 0 18px 0;margin:0 20px 0 19px;color:#000;border-bottom:1px dotted #afafb0}
+.replies .checked{background:#f5f5f5}
+.replies .tips{margin:1.5em;font-size:14px;padding:1.8em 0;text-align:center}
+.replies .inner{padding:0 2px 0 2px;zoom:1}
+.replies .innerFace{padding-left:50px}
+.replies .author,.replies .focus{float:left;display:block;color:#1e50a2;height:18px;line-height:18px;vertical-align:middle}
+.replies .flag{background:url(http://img3.ni9ni.com/comment/2012/0817/flags.png) no-repeat}
+.replies .flag .flagLink{padding-left:23px}
+.replies .mobileAuthor{background:url(http://img3.ni9ni.com/comment/2012/0817/noneboth.png) no-repeat -11px -137px;padding-left:15px}
+.replies .author{position:relative;z-index:3}
+.replies .author .from{color:#1e50a2}
+.replies .author .ip,.replies .author .from-logon{color:#666}
+.replies .author .name{font-weight:bold}
+.author .faceBox{position:absolute;z-index:3;left:-48px;top:2px}
+.author .faceBox .userFace{float:left;padding-bottom:4px;width:48px;overflow:hidden}
+.author .faceBox img{float:left}
+.author .tinyArrow-tips{left:-1000em;top:22px}
+.tinyFocus{display:inline-block;text-align:center;width:39px;line-height:12px;height:12px;padding:2px 0;background:#b1cde5;color:#fff}
+a.tinyFocus:hover,.tinyFocus:link,.tinyFocus:visited{background:#b1cde5;color:#fff;overflow:hidden;text-decoration:none}
+em.tinyFocus{color:#fbfbfb;background:#bebebe;font-style:normal}
+.author .tinyFocus{display:block;clear:both}
+.author a.tinyFocus:link,.author a.tinyFocus:visited{position:relative;z-index:5}
+.author a.tinyFocus:hover{text-decoration:none;float:left;overflow:visible}
+.author a.tinyFocus:hover .tinyArrow-tips{left:-28px}
+.replies a.focus{color:#ba2636}
+.replies em.focus{color:#666;font-style:normal}
+.replies .postTime{color:#666;float:right;display:block;white-space:nowrap}
+.replies .body{font-size:14px;padding:12px 0;clear:both;zoom:1;white-space:normal;word-break:break-all}
+.replies .content{margin:9px 3px;line-height:20px;color:#2b2b2b;clear:both;font-size:14px;word-wrap:break-word}
+.replies .commentBox .content{margin:9px 3px 0}
+.replies .checking{color:#666;padding-bottom:12px;clear:both}
+.replies .hideTips{padding:0 0 7px 7px;font-size:12px;color:#666;cursor:pointer}
+.replies .hideTips span{color:#ba2636}
+.commentBox{padding:3px;background:#ffe;border:1px solid #999;margin-bottom:12px;word-wrap:break-word;zoom:1;position:relative;z-index:1}
+.commentBox-hover{z-index:2}
+.midOfCommentBox{border-top:0;margin-bottom:3px}
+.commentBox .commentInfo{line-height:18px;height:20px;overflow:hidden;position:relative;font-size:12px;margin:0 3px}
+.commentBox .floorCount{color:#666;position:absolute;right:3px;top:0}
+.commentBox .author{color:#1e50a2;padding-top:2px}
+.replies .tieOperations{clear:both;zoom:1;margin:0 3px 2px;line-height:20px;font-size:12px; overflow:hidden}
+.replies .operations{color:#1e50a2;float:right;height:16px;line-height:16px;zoom:1}
+.replies .operations li{float:left;padding-left:1.2em}
+.replies .operations a,.replies .operations a:visited{color:#1e50a2}
+.replies .operations a.cDRed:link,.replies .operations a.cDRed:visited{color:#ba2636}
+.replies .operations a:hover{color:#ba2626}
+.replies .operations .visited,.replies .operations span{color:#666}
+.replies .visited em{color:#1e50a2}
+.replies .support em{font-style:normal;color:#ba2636}
+.replies .list{padding-bottom:20px}
+.replies .pages{padding-right:20px;padding-left:19px}
+.replies .titleBar .pages{padding-right:0}
+#quotePanel.replyModule{width:98.7%}
+#quotePanel.lastFloor{margin-left:50px;width:92%}
+/* fabiao_comment*/
+input.text{width:76px;height:15px;line-height:15px;border:1px solid #cbcbcb;background:#fff}
+.replyModule{position:relative;display:none;background:#f1f7fc;border:1px solid #dbdcdc;margin:0 auto;margin-top:7px;*margin-top:10px;width:99.3%;zoom:1}
+.replyModule-arrow{display:block;position:absolute;right:80px;top:-7px;width:14px;height:7px;background:url(http://img3.ni9ni.com/comment/2012/0817/sprites_2.5.png) no-repeat -83px -30px;overflow:hidden;text-indent:-10em;overflow:hidden;cursor:pointer}
+.replyModule-arrow-center{left:50%;margin-left:-6px}
+.replyModule .replyModule-close{display:block;position:absolute;right:6px;top:12px;width:8px;height:8px;background:url(http://img3.ni9ni.com/comment/2012/0817/sprites_2.5.png) no-repeat -45px 0;overflow:hidden;text-indent:-10em;overflow:hidden;cursor:pointer}
+.replyModule .replyForm textarea{width:98%;height:84px}
+.replyModule .replyForm{padding:0 15px}
+.replyModule .userInfo{font-size:12px;padding:0 15px;line-height:16px}
+.replyModule .replyForm-sub{display:inline;margin:4px 0;line-height:24px}
+.commentBox .replyModule .replyForm-sub{_margin-right:-5px}
+.replyModule .syntinyblog{margin-top:0}
+.replyModule .loginForm{padding:3px 0;overflow:hidden;height:26px}
+.replyModule .logon{padding:8px 0}
+.replyModule .reportForm input{vertical-align:text-top;*vertical-align:middle;margin-right:3px}
+.replyForm{padding:0 25px;text-align:left;overflow:visible;clear:both;zoom:1}
+.replyForm textarea{width:637px;height:120px;font-size:14px;line-height:1.5em;padding:5px;background:#fff;border:1px solid #dbdcdc;color:#666}
+.replyForm-sub{float:right;zoom:1;line-height:28px;font-size:12px;margin-top:8px}
+#replyForm input.toPost{float:left}
+.replyForm .syntinyblog{display:inline;color:#666;float:left;padding:0;margin:0 10px 0 0;color:#666}
+.replyForm .syntinyblog input{margin-right:4px;vertical-align:text-top;*vertical-align:middle}
+.syntinyblog .tinyblogTips{position:absolute;z-index:3;left:0;*left:3px;top:28px;background:#ffeded;border:1px solid #f6d6d6;margin:auto}
+.syntinyblog .tinyblogTips-body{float:left;padding:12px 12px 5px;position:relative;z-index:4;margin-top:-7px;white-space:nowrap;background:url(http://img3.ni9ni.com/comment/2012/0817/backgrounds1.5.png) no-repeat -168px -219px}
+.syntinyblog .tinyblogTips-close{display:block;position:absolute;z-index:5;right:4px;top:12px;width:8px;height:8px;background:url(http://img3.ni9ni.com/comment/2012/0817/backgrounds1.5.png) no-repeat -214px -188px;overflow:hidden;text-indent:-10em;overflow:hidden;cursor:pointer}
+a.mediumbtn,a.bigbtn,a.smallbtn{background:url(http://img3.ni9ni.com/comment/2012/0817/sprites_2.5.png) no-repeat scroll left top transparent}
+a.smallbtn,a.smallbtn:visited{text-align:center;display:inline-block;color:#2b2b2b!important;height:26px;line-height:26px;outline:medium none;overflow:hidden;width:60px;text-decoration:none;vertical-align:middle;background-position:0 -347px;font-size:12px}
+a.smallbtn:hover{color:#2b2b2b!important;background-position:0 -373px}
+a.smallbtn:active{color:#2b2b2b!important;background-position:0 -399px}
+a.mediumbtn,a.mediumbtn:visited{text-align:center;display:inline-block;color:#2b2b2b!important;height:26px;line-height:26px;outline:medium none;overflow:hidden;width:80px;text-decoration:none;vertical-align:middle;background-position:0 -172px;font-size:12px}
+a.mediumbtn:hover{color:#2b2b2b!important;background-position:0 -198px}
+a.mediumbtn:active{color:#2b2b2b!important;background-position:0 -224px}
+input.hiddenbtn{visibility:hidden;width:0;padding:0;border:0}
+/* comment eng */
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!--//--><![CDATA[//><!--
+function doZoom(l_type) {
+	var l_old = document.getElementById("zoomtext").style.fontSize;
+	if (null==l_old || undefined==l_old || "undefined"==l_old || ""==l_old) {
+		var l_size = 16;
+	}else {
+		var l_size = l_old.replace("px","");
+	}
+	if ("-"==l_type) l_size = (l_size*1 - 2);
+	else l_size = (l_size*1 + 2);
+	l_size = l_size < 0 ? 0 : l_size;
+	
+	document.getElementById("zoomtext").style.fontSize = l_size+"px";
+}
+//--><!]]>
+</script>
+</head>
+<body>
+<!--#include file="/ssi/header.ssi"-->
+<div class="clearit"></div>
+<script type="text/javascript" src="http://img3.ni9ni.com/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://img3.ni9ni.com/js/libs/md5.js"></script>
+<script type="text/javascript" language="javascript">
+<!--//
+var l_docs_list={"${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}":"${支持数}"};
+
+// 评论入库表
+window.comment_p_id = 12;
+window.comment_t_id = 21;
+
+function vote_(a_p_t_id, a_num){
+	// 分解参数 a_p_t_id
+	var l_p_t_id = a_p_t_id.split("_");  
+	var l_pid=l_p_t_id[0];
+	var l_tid=l_p_t_id[1];
+	var l_id =l_p_t_id[2];
+	
+	if (arguments[2]) {
+		var l_uniq_id = arguments[2]+"__"+a_p_t_id; 
+	}else {
+		var l_uniq_id = a_p_t_id;
+	}
+	
+	if (a_num>0) {
+		// 事件切换
+		$("#support_before_"+l_uniq_id).hide();
+		$("#support_after_" +l_uniq_id).css("display","inline");
+		//document.getElementById("support_after_"+a_p_t_id).style.display = "inline";
+		// 同时数字加1
+		//document.getElementById("support_after_num_"+a_p_t_id).innerHTML = document.getElementById("support_before_num_"+a_p_t_id).innerHTML * 1 + 1;
+		$("#support_after_num_"+l_uniq_id).html($("#support_before_num_"+l_uniq_id).html() * 1 + 1);
+		
+	}else if (a_num<0){
+		// 事件切换
+		$("#oppose_before_"+l_uniq_id).hide();
+		$("#oppose_after_"+l_uniq_id).css("display","inline");
+		//document.getElementById("oppose_before_"+a_p_t_id).style.display = "none";
+		//document.getElementById("oppose_after_"+a_p_t_id).style.display = "inline";
+		// 同时数字加1
+		$("#oppose_after_num_"+l_uniq_id).html($("#oppose_before_num_"+l_uniq_id).html() * 1 - 1);
+		
+	}else {
+		return null;
+	}
+	
+	// 将投票提交到服务器处理, 并返回处理结果
+		var l_url = $("#support_before_"+l_uniq_id).attr("data-valid-url");
+		var l_ = Math.round((Math.random()) * 100000000);
+		var l_action = "vote";
+		var l_type = "add";
+		var var_flag = "_";
+		$.ajax({
+				url: l_url,
+				//cache:false,
+				data:"do=o&action=" + l_action + "&db_table=vote_yule&type=" + l_type + "&cont_type=js&var_flag=" + var_flag + "&news_p_id=" + l_pid + "&news_t_id=" + l_tid + "&news_id=" + l_id + "&vote_type=" + a_num + "&_r="+l_,
+				scriptCharset:"utf-8",
+				dataType: "script", 	// script 能自己删除节点
+				type: "GET",
+				complete:function () {
+					try {
+						eval("var l_data = " + var_flag + ";");
+					}catch (ex) {
+						//alert(ex);
+					}
+					// 依据返回的结果 ， 0:没有出错, >0就是有错误信息
+					if (0==l_data.ret){
+					}else {
+						// alert(l_data.ret);
+					}
+				}
+			});
+}
+
+
+function chkform(a_obj)
+{
+	//var frm = document.forms[num];
+	var frm = a_obj;
+	var errnum = 0;
+	var errsrt = "对不起，有以下问题需要您更正\n\n";
+
+	if( "" == frm["b"].value ){
+		errnum++;
+		errsrt += "- “内容”不能为空！ \n";
+	}
+	if( "" == frm["username"].value ){
+		errnum++;
+		errsrt += "- “用户名”不能为空！\n";
+	}
+	if( "" == frm["news_p_id"].value ){
+		errnum++;
+		errsrt += "- “项目ID”不能为空！ \n";
+	}
+	if( "" == frm["news_t_id"].value ){
+		errnum++;
+		errsrt += "- “表ID”不能为空！ \n";
+	}
+	if( "" == frm["news_id"].value ){
+		errnum++;
+		errsrt += "- “新闻ID”不能为空！ \n";
+	}
+	if( "" == frm["parent_id"].value ){
+		errnum++;
+		errsrt += "- “父级ID”不能为空！ \n";
+	}
+	
+	if (errnum>0) {
+		alert(errsrt+"\n\n多谢您的支持 :D");
+		//return false;
+	} else{
+		 frm.submit();
+		 //return true;
+	}
+	return false
+}
+
+// 动态加载各文章的顶、踩和留言条数
+$(function(){
+	// 获取接口的数据
+	if (typeof l_docs_list!='undefined' && l_docs_list!=null && l_docs_list!=undefined && l_docs_list!="undefined" && l_docs_list!="")
+	{
+		var l_url = "http://comment.ni9ni.com/add/";
+		var l_ = Math.round((Math.random()) * 100000000);
+		var l_action = "memory_data";
+		var var_flag = "_";
+		
+		// 拼装请求字符串
+		var l_str = "";
+		var l_page_i = 0;
+		for (var l_key in l_docs_list){
+		    if (l_page_i>0) l_str += ",";
+			// 有三种: 顶、踩、留言, 
+			var l_arr = ["vote_"+l_key+"_up", "vote_"+l_key+"_dn", "liuyan_"+l_key+"_num"];
+			for (var l_i in l_arr){
+				if (l_i>0) l_str += ",";
+				l_str += l_arr[l_i];
+			}
+			
+			l_page_i++;
+		}
+		
+		$.ajax({
+			url: l_url,
+			data:"do=o&action=" + l_action + "&cont_type=js&var_flag=" + var_flag + "&list=" + l_str + "&_r="+l_,
+			scriptCharset:"utf-8",
+			dataType: "script", 	// script 能自己删除节点
+			type: "GET",
+			complete:function () {
+				try {
+					eval("var l_data = " + var_flag + ";");
+				}catch (ex) {
+					// alert(ex);
+				}
+				// 依据返回的结果, 进行节点赋值 
+				for (var l_key in l_docs_list){
+					$("#support_before_num_"+l_key).html(l_data["vote_"+l_key+"_up"]*1 + l_docs_list[l_key]*1);
+					$("#oppose_before_num_"+l_key).html(l_data["vote_"+l_key+"_dn"]*1);
+					var l_liuyan_num = l_data["liuyan_"+l_key+"_num"]*1;
+					if (l_liuyan_num>0)
+						 $("#liuyan_"+l_key+"_num").html(l_liuyan_num + "条留言");
+					else $("#liuyan_"+l_key+"_num").html("抢沙发");
+					
+					// 然后呈现出评论列表
+					nav_init();
+					liuyan_display(l_key);
+				}
+			}
+		});
+	}
+})
+
+function liuyan_display(news_p_t_id){
+	// 分解参数 news_p_t_id
+	var l_p_t_id = news_p_t_id.split("_");  
+	var l_pid=l_p_t_id[0];
+	var l_tid=l_p_t_id[1];
+	var l_id =l_p_t_id[2];
+	
+	if ("none" == $("#mainReplies_"+news_p_t_id).css("display")) {
+		$("#mainReplies_"+news_p_t_id).show();
+		$("#mainReplies_"+news_p_t_id).html('<div class="list"><img src="http://img3.ni9ni.com/cj/zq/2012/0421/progress0.gif" />加载中</div>');
+		
+		// 需要去服务器获取最新数据
+		var l_url = "http://comment.ni9ni.com/add/";
+		var l_ = Math.round((Math.random()) * 100000000);
+		var l_action = "ly";
+		var l_type = "list";
+		var var_flag = "_";
+		$.ajax({
+				url: l_url,
+				data:"do=o&action=" + l_action + "&db_table=ly_yule&type=" + l_type + "&cont_type=js&var_flag=" + var_flag + "&news_p_id=" + l_pid + "&news_t_id=" + l_tid + "&news_id=" + l_id + "&_r="+l_,
+				scriptCharset:"utf-8",
+				dataType: "script",
+				type: "GET",
+				complete:function () {
+					try {
+						eval("var l_data = " + var_flag + ";");
+					}catch (ex) {}
+					
+					var l_str = '<div class="list">';
+					
+					// 返回的是json串, 逐项进行分解
+					
+					var l_len = l_data["newPosts"].length;
+					if (l_len<1){
+						// 什么都不显示, 除了后面跟着的留言框
+					}else {
+						l_str += get_moban(news_p_t_id, l_data);
+					}
+					l_str += getLiuyanForm(news_p_t_id,news_p_t_id,news_p_t_id);	// 呈现留言的表单, 准对该新闻的
+					l_str += '</div>';
+					
+					$("#mainReplies_"+news_p_t_id).html(l_str);
+					login_append(news_p_t_id,news_p_t_id,news_p_t_id);
+				}
+		});
+	} else {
+		$("#mainReplies_"+news_p_t_id).hide();
+	}
+}
+
+function get_moban(news_p_t_id, l_data){
+	var l_moban = "";
+	
+	var l_len_ly = l_data["newPosts"].length;
+	
+	if (l_len_ly>0) {
+		//$("#liuyan_"+news_p_t_id+"_num").html(l_len_ly + "条留言"); 	// 更新留言条数
+		
+		for (var l_i in l_data["newPosts"]){
+			// l_i 以0开始的数组, 表示共有多条留言（是不包括各条留言的父级）
+			l_moban += '<div id="tie-data-'+ ( l_i*1 + 1 )+'" class="reply">';
+							
+							// 长度一条和多条的显示有点小小差别
+							// 依据长度进行拼装
+							if (l_len_ly<1){
+								// 没有留言 l_moban += getLiuyanForm(news_p_t_id,news_p_t_id);
+							}else {
+								var l_len=0;	// 单条评论所含父级在内的条数
+								for (var l_j in l_data["newPosts"][l_i]){
+									l_len++;
+								}
+								
+								// 每条评论的第一条就是最外层的评论
+								var l_content = l_data["newPosts"][l_i][l_len]['b'];	// 具体内容; 
+								var l_a_cn = l_data["newPosts"][l_i][l_len]['a_cn'];	// 地区
+								var l_ip = l_data["newPosts"][l_i][l_len]['ip'];		// ip地址
+								var l_data_time = l_data["newPosts"][l_i][l_len]['t'];	// 时间
+								var son_p_t_id = l_data["newPosts"][l_i][l_len]['p_t_id'];	// 该条留言所属项目、表、ID
+								var son_ding_num = l_data["newPosts"][l_i][l_len]['ding'];
+								
+								// <span class="faceBox"> <span class="userFace"><img width="35" height="35" alt="'+l_a_cn+'" src="http://comment.news.ni9ni.com/images/noface35_35.png"></span> </span>
+								l_moban += '<div class="inner innerFace clearfix"> <span class="author">  <span class="from">'+l_a_cn+'网友</span> <span class="ip">ip：'+l_ip+'</span> </span> <span class="postTime">'+l_data_time+' 发表</span>';
+								l_moban += '  <div class="body">';
+								
+								// 只有一条的情况跟2条及以上呈现不一样 
+								if (1== l_len){
+									l_moban += ' <div style="line-height: 21px; margin-bottom: 3px; zoom: 1; word-wrap: break-word;">'+ l_content +'</div>';
+								}else {
+									l_moban += liuyan_pinzhuang_mul(news_p_t_id, son_p_t_id, l_data["newPosts"][l_i], l_len, l_len-1);
+									l_moban += ' <p class="content">'+ l_content +'</p>';
+								}
+								l_moban += '   </div>';
+								l_moban += 	   common_ding_huifu(news_p_t_id, son_p_t_id, son_p_t_id, son_ding_num);	// 
+								l_moban += '</div>';
+							}
+			
+			l_moban += '</div>';
+		}
+	}
+	return l_moban;
+}
+
+// 需要进行递归
+// news_p_t_id:最外层新闻id comment_p_t_id: 最外层评论id
+function liuyan_pinzhuang_mul(news_p_t_id, comment_p_t_id, a_data, a_len_total, a_num){
+	var l_str = "";
+	if (a_len_total<=a_num) return l_str;	// 总层级必须大于当前层级
+	
+	// l_key 以1开始的序号，第几条帖子, 数据由固定的字段组成. 拼装具体字符串
+	if (a_num<1) {
+		return l_str;	// 可以结束递归
+	}else {
+							var l_content = a_data[a_num]['b'];		// 具体内容; 
+							var l_a_cn = a_data[a_num]['a_cn'];
+							var l_ip = a_data[a_num]['ip'];			// ip地址
+							var l_data_time = a_data[a_num]['t'];	// 时间
+							var son_p_t_id = a_data[a_num]['p_t_id'];
+							var son_ding_num = a_data[a_num]['ding'];
+		// 
+		l_str += '<div class="commentBox">';
+		
+		var l_tmp = '';
+		if (a_num>1) {
+			l_tmp = liuyan_pinzhuang_mul(news_p_t_id, comment_p_t_id, a_data, a_len_total, a_num-1 );
+		}
+		l_str += l_tmp + ' <div class="commentInfo"> <span class="author">'+ l_a_cn +'网友 的原贴：</span> <span style="float:right; padding-right:50px;color:#666">['+l_data_time+']</span> <span class="floorCount">'+ a_num +'</span> </div>';
+        l_str += '          <p class="content">'+ l_content +'</p>';
+        l_str += '          <div class="tieOperations" style="display:block;visibility:visible;">';
+        l_str += 			  common_ding_huifu(news_p_t_id, comment_p_t_id, son_p_t_id, son_ding_num);
+        l_str += '          </div>';
+        l_str += '        </div>';
+	}
+	
+	return l_str;
+}
+
+function common_ding_huifu(news_p_t_id, comment_p_t_id, son_p_t_id, son_ding_num){
+	var l_uniq_id = comment_p_t_id + "__" + son_p_t_id;
+	
+	var l_str = "";
+		l_str += '            <ul class="operations">';
+		l_str += '              <li class="support"><span id="support_before_' + l_uniq_id + '" style="display:inline; cursor:pointer; color:#009193" onclick="vote_(\'' + son_p_t_id + '\',1,\'' + comment_p_t_id + '\')" data-valid-url="http://comment.ni9ni.com/add/">顶[<span style="color:#FF0000" id="support_before_num_'+ l_uniq_id +'">'+ son_ding_num +'</span>]</span><span id="support_after_' + l_uniq_id + '" style="display:none">顶[<span style="color:#FF0000" id="support_after_num_' + l_uniq_id + '">0</span>]</span></li>';
+		l_str += '              <li><span style="cursor:pointer; color:#009193" onclick="return replay_display(\'' + news_p_t_id + '\', \'' + comment_p_t_id + '\', \'' + son_p_t_id + '\');">回复</span</li>';
+		l_str += '            </ul>';
+	
+	return l_str;
+}
+
+
+function login_append(news_p_t_id, comment_p_t_id, a_p_t_id){
+	var l_uniq_id = comment_p_t_id + "__" + a_p_t_id;
+	
+	// 检测是否登录
+	if (typeof login_rlt!='undefined' && login_rlt!=null && login_rlt!=undefined && login_rlt!="undefined" && login_rlt!=""){
+		if (0==login_rlt.ret){
+			// 成功登录, 则显示用户名等信息, 同时下面的表单也要填写用户名
+			$("#quoteLogin"+l_uniq_id).hide();
+			$("div.logon").show();
+			$("#user_name2_"+l_uniq_id).html(login_rlt.username);
+			
+			$("input[name='username']").val(login_rlt.username);	// 
+		}else {
+			// 则显示登录窗口
+			$("#quoteLogin"+l_uniq_id).show();
+			$("div.logon").hide();
+		}		
+	}else{
+		// 尝试从服务器获取一次
+		// succ_login();
+	}
+}
+
+function replay_display(news_p_t_id, comment_p_t_id, a_p_t_id){
+	var l_uniq_id = comment_p_t_id + "__" + a_p_t_id;
+	
+	if( $("#quotePanel_"+l_uniq_id).length>0 ) {
+		// 如果该节点已经存在, 则通常是进行状态的切换
+		$("#quotePanel_"+l_uniq_id).toggle();
+	}else {
+		// 如果节点不存在, 需要创建此节点
+		l_str = getLiuyanForm(news_p_t_id, comment_p_t_id, a_p_t_id);
+		$("#support_before_"+l_uniq_id).parent().parent().parent().parent().append(l_str);
+		
+		// 然后立即检查用户是否登录状态, 如果确认已经登录, 则需要呈现用户名等;如果没有,则需要用户填写登录信息
+		login_append(news_p_t_id, comment_p_t_id, a_p_t_id);
+	}
+}
+
+function fail_login2(){
+	$("form.loginForm").show();
+	$("div.logon").hide();
+	window.login_rlt=null;
+}
+function logout2(){
+	var l_theurl = "http://uibi.ni9ni.com/login/?do=o&action=check_login&logout=1&rn=@cache@";
+	var loadjs = new LoadScript("logoutdatascript001",l_theurl, fail_login2, null, "@cache@");
+	loadjs.loading();
+	return;
+}
+function check_get_login(a_arr){
+	// 成功：[1,''] 失败[0]
+	eval("var l_arr = "+a_arr+";");	// 获取json数据
+	
+	if(0==l_arr.ret){
+		// 成功, 则需要切换一下状态
+		$("form.loginForm").hide();
+		$("div.logon").show();
+		$(".userName").html(l_arr.username);
+		$("input[name='username']").val(l_arr.username);
+	}else {
+		alert("用户名或密码错误");
+	}
+}
+function loginclickproc(news_p_t_id, comment_p_t_id, a_p_t_id, a_username_id,a_password_id){
+	var l_uniq_id = comment_p_t_id + "__" + a_p_t_id;
+	
+	var username = $("#"+a_username_id+"_"+l_uniq_id).val();
+	var password = $("#"+a_password_id+"_"+l_uniq_id).val();
+	var remember = 0;
+	if ( $("#remember_"+l_uniq_id).is(':checked')) {
+		remember = 1;
+	}
+	
+	if(getCookie("sid")){
+		login_append(news_p_t_id,comment_p_t_id,a_p_t_id);
+	}else{
+		if(""==username||""==password){
+			alert("请输入用户名和密码！");
+			return ;
+		}else {
+			var l_theurl = "http://uibi.ni9ni.com/login/?do=o&action=check_login&rn=@cache@&cont_type=js&var_flag=login_rlt&username="+encodeURIComponent(username)+"&password="+md5(password)+"&remember="+remember;
+			var loadjs = new LoadScript("logindatascript001",l_theurl, check_get_login, "login_rlt", "@cache@");
+				loadjs.loading();
+		}
+	}
+	return ;
+}
+
+
+function fabiaopinglun(news_p_t_id, comment_p_t_id, a_p_t_id){
+	var l_uniq_id = comment_p_t_id + "__" + a_p_t_id;
+	
+	// 还需要检查用户是否登录，未登录则提示其先登录
+	if (typeof login_rlt!='undefined' && login_rlt!=null && login_rlt!=undefined && login_rlt!="undefined" && login_rlt!=""){
+		if (0==login_rlt.ret){
+			$("form[id='quoteForm_"+l_uniq_id+"']").submit();
+			alert("发布成功, 谢谢");
+			// 模拟点击, 其实应当在最后添加上刚才的评论, 网络请求可能有延时情况，以后完善????
+			liuyan_display(news_p_t_id);
+			liuyan_display(news_p_t_id);
+		}else {
+			alert("登录后才能发贴");	// 未登录则需要提示先登录
+		}
+	}else{
+		alert("登录后才能发贴");
+	}
+	//document.getElementById("quoteForm_"+a_p_t_id).submit();	// 这个方法不行
+	//return true;	// 不能进行返回, 否则有问题
+}
+// 
+function getLiuyanForm(news_p_t_id, comment_p_t_id, a_p_t_id){
+	// 分解 a_p_t_id
+	if (a_p_t_id == news_p_t_id){
+		var l_pid=comment_p_id;
+		var l_tid=comment_t_id;
+		var l_id=0;
+	}else{
+		var l_p_t_id = a_p_t_id.split("_");  
+		var l_pid=l_p_t_id[0];
+		var l_tid=l_p_t_id[1];
+		var l_id=l_p_t_id[2];
+	}
+	// 分解参数 news_p_t_id
+	var l_p_t_id = news_p_t_id.split("_");  
+	var l_news_pid=l_p_t_id[0];
+	var l_news_tid=l_p_t_id[1];
+	var l_news_id=l_p_t_id[2];
+	
+	var l_uniq_id = comment_p_t_id + "__" + a_p_t_id;
+	
+	var l_str = '                     <div class="replyModule clearfix" id="quotePanel_' + l_uniq_id + '" style="display: block;"> <a onclick="return replay_display(\'' + news_p_t_id + '\', \'' + comment_p_t_id + '\', \'' + a_p_t_id + '\');" class="replyModule-close close">关闭</a><span class="replyModule-arrow"></span>';
+        l_str += '                          <div class="postBody">';
+        l_str += '                            <div class="userInfo">';
+        l_str += '                              <form id="quoteLogin' + l_uniq_id + '" method="get" action="http://uibi.ni9ni.com/login/" class="loginForm autoSubmitForm" style="display: block;">';
+        l_str += '                                <label>用户名：';
+        l_str += '                                <input type="text" class="text" autocomplete="off" valueholder="如：example@ni9ni.com" id="username_' + l_uniq_id + '" name="username">';
+        l_str += '                                </label>';
+        l_str += '                                <label>密码：';
+        l_str += '                                <input type="password" class="text" id="password_' + l_uniq_id + '" name="password">';
+        l_str += '                                </label>';
+        l_str += '                                <label>';
+        l_str += '                                <input type="checkbox" checked="checked" id="remember_' + l_uniq_id + '" name="remember" value="1">';
+        l_str += '                                <span>自动登录</span></label>';
+        l_str += '                                <a href="javascript:loginclickproc(\'' + news_p_t_id + '\', \'' + comment_p_t_id + '\', \'' + a_p_t_id + '\',\'username\',\'password\');" class="smallbtn forksubmitbtn">登  录</a> <a class="register" target="_blank" href="http://uibi.ni9ni.com/login/reg.shtml?bak_url='+ window.location+'">注册</a>';
+        l_str += '                                <input type="submit" class="hiddenbtn submitbtn" value="">';
+        l_str += '                                <input type="hidden" name="url" value="">';
+        l_str += '                              </form>';
+        l_str += '                              <div class="logon" style="display:none"> <strong id="user_name2_' + l_uniq_id + '" style="color:#009193" class="userName"></strong>&nbsp;| <a href="javascript:logout2();" class="logout">退出</a> </div>';
+        l_str += '                            </div>';
+        l_str += '                            <form id="quoteForm_' + l_uniq_id + '" method="post" action="http://uibi.ni9ni.com/login/?do=document_add" onsubmit="return chkform(this)" class="replyForm clearfix" target="post_target">';
+        l_str += '                              <textarea cols="80" rows="8" name="b" id="quoteBody_' + l_uniq_id + '" style=""></textarea>';
+        l_str += '                              <div class="replyForm-sub">';
+        l_str += '                                <input type="hidden" name="username">';
+        l_str += '                                <input type="hidden" name="news_p_id" value="'+l_news_pid+'">';
+        l_str += '                                <input type="hidden" name="news_t_id" value="'+l_news_tid+'">';
+        l_str += '                                <input type="hidden" name="news_id" value="'+l_news_id+'">';
+        l_str += '                                <input type="hidden" name="parent_id" id="parent_id_' + l_uniq_id + '" value="'+l_id+'">';
+        l_str += '                                <input type="hidden" name="p_id" value="'+l_pid+'">';
+        l_str += '                                <input type="hidden" name="t_id" value="'+l_tid+'">';
+        l_str += '                                <input type="hidden" name="do" value="document_add">';
+        l_str += '                                <input type="hidden" name="cont_type" value="js">';
+        l_str += '                                <input type="submit" class="hiddenbtn submitbtn" value="">';
+        l_str += '                                <a href="javascript:fabiaopinglun(\'' + news_p_t_id + '\', \'' + comment_p_t_id + '\', \'' + a_p_t_id + '\');" class="mediumbtn forksubmitbtn">马上发表</a> </div>';
+        l_str += '                            </form>';
+        l_str += '                          </div>';
+        l_str += '                        </div>';
+		
+	return l_str;
+}
+
+//-->
+</script>
+<iframe name="post_target" src="about:blank" width="0" height="0" style="display:none"></iframe>
+<div id="wrap" class="wrap">
+  <div class="main">
+    <div class="mainL">
+      <div class="mainContent">
+        <div class="subMenu"> <a href="${_PROJECT_waiwang_url}">${_PROJECT_name_cn}</a> &gt; ${栏目显示} ${专题显示} &gt; 正文 </div>
+        <h1>${文档标题}</h1>
+        <p class="secTitle"> <em>${创建年份}年${创建月份}月${创建日}日 ${创建小时}:${创建分钟}</em> <em>${来源}</em> [ <a href="javascript: doZoom('+');">大</a> | <a href="javascript: doZoom('-');">小</a> ]</p>
+        <div class="textbox-content ss-no-ignore-whitespace" id="zoomtext">${正文}<br />
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_24x24"><a class="jiathis_button_weixin"></a><a class="jiathis_button_tsina"></a><a class="jiathis_button_qzone"></a><a class="jiathis_button_tqq"></a><a class="jiathis_button_renren"></a><a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a><a class="jiathis_counter_style"></a></div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1369095915131798" charset="utf-8"></script>
+<!-- JiaThis Button END --></div>
+		<div style="padding:5px;">
+		  <p class="info"><span id="support_before_${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}" style="display:inline; cursor:pointer; color:#009193" onclick="vote_('${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}',1)" data-valid-url="http://comment.ni9ni.com/add/">顶[<span style="color:#FF0000" id="support_before_num_${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}">9</span>]</span> <span id="support_after_${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}"  style="display:none">顶[<span style="color:#FF0000" id="support_after_num_${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}">0</span>]</span> <span>&nbsp;</span> <span id="oppose_before_${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}" style="display:inline; cursor:pointer; color:#009193" onclick="vote_('${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}',-1)">踩[<span style="color:#FF0000" id="oppose_before_num_${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}">0</span>]</span> <span id="oppose_after_${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}"  style="display:none">踩[<span style="color:#FF0000" id="oppose_after_num_${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}">0</span>]</span> <span>&nbsp;</span> <span style="cursor:pointer; color:#009193" onclick="return liuyan_display('${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}');"><span id="liuyan_${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}_num">0条流言</span></span> </p>
+          <div class="replies" id="mainReplies_${_PROJECT_id}_${_PROJECT_TABLE_id}_${id}" style="display:none"></div>
+		</div>
+      </div>
+    </div>
+    <div class="mainR">
+      <!--#include virtual="/ads/common/1.html"-->
+    </div>
+  </div>
+</div>
+<!--#include virtual="/ssi/footer.ssi"-->
+</body>
+</html>

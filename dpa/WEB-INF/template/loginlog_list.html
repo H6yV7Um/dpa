@@ -1,0 +1,157 @@
+﻿<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>loginlog列表</title>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<link rel="stylesheet" href="<!--{$RES_WEBPATH_PREF}-->dpa_html/css/List.css">
+<script language="javascript">
+<!--
+//删除信息的操作确认
+function action_onclick(cgi_url,form_name,radio_name,action)
+{
+	len = form_name.elements.length;
+	
+	for(index=0; index < len; index++ )
+	{
+		if(form_name.elements[index].name == radio_name)
+		{
+			var obj = form_name.elements[radio_name];
+			var len = obj.length;
+			var	check;
+			var check_count = 0;
+			var radio_id;
+			if(len != null)
+			{
+				for(var i=0;i<len;i++)
+				{			
+					check = obj[i].checked;
+					if(check == true)
+					{
+						radio_id = obj[i].value;
+						check_count++;
+					}
+				}
+			}
+			else
+			{
+				check = obj.checked;
+				if(check == true)
+					{
+						radio_id = obj.value;
+						check_count++;
+					}
+			}
+		}
+	}
+	if(check_count == 1)
+	{
+		if(action == "del")
+		{
+			if(confirm("请确认是否真的删除?"))
+			{
+				cgi_url = cgi_url + "&action=" + action + "&id=" + radio_id;
+				window.self.open(cgi_url,"_self");
+				return true;
+			}
+			return false;
+		}
+		else
+		{
+			cgi_url = cgi_url + "&action=" + action + "&id=" + radio_id;
+			window.self.open(cgi_url,"_self");
+			return true;	
+		}
+	}
+	else
+	{
+		alert("请您选中一条信息!");
+		return false;
+	}
+}
+function PlusQueryClick(a_id){
+	if(document.getElementById(a_id).style.display == "block"){
+		document.getElementById(a_id).style.display = "none";
+	}else{
+		document.getElementById(a_id).style.display = "block";
+	}
+}
+-->
+</script>
+</head>
+<body topmargin="0" leftmargin="0" bgcolor="#f2faff">
+<table bgcolor=#306e9f border="0" width="100%" cellspacing="2" cellpadding="3">
+  <tr class="title hd">
+    <td width="50%" nowrap align=left>当前位置:/loginlog管理</td>
+    <td width="50%" nowrap align=right>loginlog列表</td>
+  </tr>
+</table>
+<hr size=1>
+<table width="90%" border="0" cellpadding="2" cellspacing="2" >
+  <form method="post" action="main.php" name="myform_search">
+    <input type="hidden" name="do" value="<!--{$do}-->" />
+    <input type="hidden" name="<!--{$flag}-->" value="<!--{$p}-->" />
+    <input type="hidden" name="<!--{$pagesize_flag}-->" value="<!--{$pagesize}-->" />
+    <input type="hidden" name="sql_where" value="<!--{$sql_where}-->" />
+    <tr>
+      <td>搜索:
+        <select name="search_field_1">
+          <option value=""></option>
+          <!--{$field_option}-->
+        </select>
+        <select name="search_method_1">
+          <option value="" ></option>
+          <!--{$method_option}-->
+        </select>
+        <input name="search_value_1" value="" type="text" size="20" />
+        <input type="submit" name="submit" value="查 询">
+        <!-- tong shi tiao jian  -->
+        <input name='plus_query_1' onClick="PlusQueryClick('ID_QUERY_UNIT_2')" value='2'  type="checkbox">
+        并查
+        <div id="ID_QUERY_UNIT_2" style="display:none">
+          <input name="search_concat_2" type=radio value="and" checked>
+          同时
+          <input name="search_concat_2" type=radio value="or" >
+          或者
+          <select name="search_field_2">
+            <option value=""></option>
+            <!--{$field_option}-->
+          </select>
+          <select name="search_method_2">
+            <option value="" ></option>
+            <!--{$method_option}-->
+          </select>
+          <input name="search_value_2" value="" type="text" size="20" />
+        </div></td>
+    </tr>
+  </form>
+</table>
+<form method=post action="main.php" name=myform>
+  <input type="hidden" name="do" value="<!--{$do}-->" />
+  <input type="hidden" name="<!--{$flag}-->" value="<!--{$p}-->" />
+  <input type="hidden" name="<!--{$pagesize_flag}-->" value="<!--{$pagesize}-->" />
+  <input type="hidden" name="sql_where" value="<!--{$sql_where}-->" />
+  <table border="0" width="100%" cellspacing="2" cellpadding="0">
+    <tr>
+      <td width="50%" nowrap align=left><input type='button' onClick="action_onclick('main.php?do=loginlog_del',self.document.myform,'id','del');return false" value="删 除">
+      </td>
+      <td><div class="setPages">每页显示: <input type="text" name="pagesize_form" size="6" /> 条 <input type="submit" value="查 询" /></div></td>
+    </tr>
+  </table>
+  <hr size=1>
+  <table bgColor=#f3f3ee border=0 cellPadding=3 cellSpacing=0 width="100%">
+    <tr class="title">
+      <!--{$loginlog_show_title}-->
+    </tr>
+    <!--{$loginlog_show}-->
+  </table>
+  <hr size=1>
+  <table width="98%" border="0" align="center" cellpadding="1" cellspacing="1">
+    <tr>
+      <td><div class="pages"><!--{$pagebar}--></div></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
+<!-- CHT 2009-03-21 22:10:12 -->

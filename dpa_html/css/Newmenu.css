@@ -1,0 +1,468 @@
+/*胡长建建立格式表单于2000/8/5*/
+BODY
+{
+}
+DIV.sidebartext 
+{
+	position: relative;
+	left: -22px;
+	height: 72px;
+	width: 250px;
+	margin-top: .6em;
+	margin-right: 3em;
+	margin-left: 0;
+	margin-bottom: .6em;
+	padding-top: .0em;
+	padding-right: 6px;
+	padding-left: .75em;
+	padding-bottom: .75em;
+	cursor: hand;
+	border-left: 4pt solid #339900;
+	background-color: #F0F0F0; 
+}
+
+.topmenubar 
+{  
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; color: #FFFFFF
+}
+.LeftNavOff
+{
+   BACKGROUND-COLOR: #6699CC;
+   BORDER-BOTTOM: #6699CC solid 1px;
+   BORDER-LEFT: #6699CC solid 1px;
+   BORDER-RIGHT: #6699CC solid 1px;
+   BORDER-TOP: #6699CC solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 3px 3px;
+   PADDING-BOTTOM: 3px;
+   PADDING-LEFT: 10px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 3px;
+   TEXT-DECORATION: none;
+   WIDTH: 110px
+}
+.LeftNavUp
+{
+   BACKGROUND-COLOR: #6699CC;
+   BORDER-BOTTOM: #333366 solid 1px;
+   BORDER-LEFT: white solid 1px;
+   BORDER-RIGHT: #333366 solid 1px;
+   BORDER-TOP: white solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   HEIGHT: 0pt;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 3px 3px;
+   PADDING-BOTTOM: 3px;
+   PADDING-LEFT: 10px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 3px;
+   TEXT-DECORATION: none;
+   WIDTH: 110px
+}
+.LeftNavDown
+{
+   BACKGROUND-COLOR: #6699CC;
+   BORDER-BOTTOM: white solid 1px;
+   BORDER-LEFT: #000066 solid 1px;
+   BORDER-RIGHT: white solid 1px;
+   BORDER-TOP: #000066 solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 3px 3px;
+   PADDING-BOTTOM: 3px;
+   PADDING-LEFT: 10px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 3px;
+   TEXT-DECORATION: none;
+   WIDTH: 110px
+}
+.LeftNavOn
+{
+   BACKGROUND-COLOR: #FFA500;
+   BORDER-BOTTOM: #99CCFF solid 1px;
+   BORDER-LEFT: #000066 solid 1px;
+   BORDER-RIGHT: #99CCFF solid 1px;
+   BORDER-TOP: #000066 solid 1px;
+   COLOR: #666666;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 3px 3px;
+   PADDING-BOTTOM: 3px;
+   PADDING-LEFT: 10px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 3px;
+   TEXT-DECORATION: none;
+   WIDTH: 135px
+}
+.LeftNavChosen
+{
+   BACKGROUND-COLOR: #006699;
+   BORDER-BOTTOM: #006699 solid 1px;
+   BORDER-LEFT: #006699 solid 1px;
+   BORDER-RIGHT: #006699 solid 1px;
+   BORDER-TOP: #006699 solid 1px;
+   COLOR: #FFCC00;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 1px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 135px;
+}
+.LeftNavChosenUp
+{
+   BACKGROUND-COLOR: #006699;
+   BORDER-BOTTOM: buttonshadow solid 1px;
+   BORDER-LEFT: buttonhighlight solid 1px;
+   BORDER-RIGHT: buttonshadow solid 1px;
+   BORDER-TOP: buttonhighlight solid 1px;
+   COLOR: #FFCC00;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   HEIGHT: 0pt;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 1px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 135px
+}
+.LeftNavChosenDown
+{
+   BACKGROUND-COLOR: #006699;
+   BORDER-BOTTOM: buttonhighlight solid 1px;
+   BORDER-LEFT: buttonshadow solid 1px;
+   BORDER-RIGHT: buttonhighlight solid 1px;
+   BORDER-TOP: buttonshadow solid 1px;
+   COLOR: #FFCC00;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   FONT-WEIGHT: bold;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 5px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 135px
+}
+.LeftNavSubOff
+{
+	BACKGROUND-COLOR: black;
+	BORDER-BOTTOM: #006699 solid 1px;
+	BORDER-LEFT: #006699 solid 1px;
+	BORDER-RIGHT: #006699 solid 1px;
+	BORDER-TOP: #006699 solid 1px;
+	COLOR: #FFFFFF;
+	CURSOR: hand;
+	FONT-FAMILY: verdana;
+	FONT-SIZE: 11px;
+	LETTER-SPACING: -0.5pt;
+	LINE-HEIGHT: 20px;
+	MARGIN: 2px 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 30px;
+	PADDING-RIGHT: 3px;
+	PADDING-TOP: 0px;
+	TEXT-DECORATION: none;
+	WIDTH: 135px
+}
+.LeftNavSubUp
+{
+   BACKGROUND-COLOR: black;
+   BORDER-BOTTOM: #333366 solid 1px;
+   BORDER-LEFT: #6699CC solid 1px;
+   BORDER-RIGHT: #333366 solid 1px;
+   BORDER-TOP: #6699CC solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 30px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 135px
+}
+.LeftNavSubDown
+{
+   BACKGROUND-COLOR: #006699;
+   BORDER-BOTTOM: #99CCFF solid 1px;
+   BORDER-LEFT: #000066 solid 1px;
+   BORDER-RIGHT: #99CCFF solid 1px;
+   BORDER-TOP: #000066 solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 30px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 135px
+}
+.LeftNavSubChosen
+{
+   BACKGROUND-COLOR: black;
+   BORDER-BOTTOM: black solid 1px;
+   BORDER-LEFT: black solid 1px;
+   BORDER-RIGHT: black solid 1px;
+   BORDER-TOP: black solid 1px;
+   COLOR: #FFCC00;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 14px;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 25px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 8px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 100px;
+}
+.LeftNavSubChosenUp
+{
+   BACKGROUND-COLOR: black;
+   BORDER-BOTTOM: buttonshadow solid 1px;
+   BORDER-LEFT: buttonhighlight solid 1px;
+   BORDER-RIGHT:buttonshadow solid 1px;
+   BORDER-TOP: buttonhighlight solid 1px;
+   COLOR: #FFCC00;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   HEIGHT: 0pt;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 8px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 100px
+}
+.LeftNavSubChosenDown
+{
+   BACKGROUND-COLOR: black;
+   BORDER-BOTTOM: buttonhighlight solid 1px;
+   BORDER-LEFT: buttonshadow solid 1px;
+   BORDER-RIGHT: buttonhighlight solid 1px;
+   BORDER-TOP: buttonshadow solid 1px;
+   COLOR: #FFCC00;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 8px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 100px
+}
+.LeftAddressOff
+{
+	BACKGROUND-COLOR: #D9E9F9;
+	BORDER-BOTTOM: #D9E9F9 solid 1px;
+	BORDER-LEFT: #D9E9F9 solid 1px;
+	BORDER-RIGHT: #D9E9F9 solid 1px;
+	BORDER-TOP: #D9E9F9 solid 1px;
+	COLOR: #FFFFFF;
+	CURSOR: hand;
+	FONT-FAMILY: verdana;
+	FONT-SIZE: 11px;
+	LETTER-SPACING: -0.5pt;
+	LINE-HEIGHT: 20px;
+	MARGIN: 2px 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 5px;
+	PADDING-RIGHT: 3px;
+	PADDING-TOP: 0px;
+	TEXT-DECORATION: none;
+	WIDTH: 65px
+}
+.LeftAddressUp
+{
+   BACKGROUND-COLOR: #D9E9F9;
+   BORDER-BOTTOM: gray solid 1px;
+   BORDER-LEFT: #FFFFFF solid 1px;
+   BORDER-RIGHT: gray solid 1px;
+   BORDER-TOP: #FFFFFF solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 11px;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 2px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 5px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 65px
+}
+.LeftBoxOff	
+{
+	BACKGROUND-COLOR: #639cce;
+	BORDER-BOTTOM: gray solid 1px;
+	BORDER-LEFT: gray solid 1px;
+	BORDER-RIGHT: gray solid 1px;
+	BORDER-TOP: gray solid 1px;
+	COLOR: #639cce;
+	CURSOR: hand;
+	FONT-FAMILY: verdana;
+	FONT-SIZE: 10px;
+	LETTER-SPACING: -0.5pt;
+	LINE-HEIGHT: 16px;
+	MARGIN: 0px 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 5px;
+	PADDING-RIGHT: 3px;
+	PADDING-TOP: 0px;
+	TEXT-DECORATION: none;
+	WIDTH: 100%
+}
+.LeftBoxUp
+{
+   BACKGROUND-COLOR: #639cce;
+   BORDER-BOTTOM: black solid 1px;
+   BORDER-LEFT: #639cce solid 1px;
+   BORDER-RIGHT: black solid 1px;
+   BORDER-TOP: #639cce solid 1px;
+   COLOR: #639cce;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 10px;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 16px;
+   MARGIN: 0px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 5px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 100%
+}
+.LeftBoxDown
+{
+   BACKGROUND-COLOR: #639cce;
+   BORDER-BOTTOM: #639cce solid 1px;
+   BORDER-LEFT: 639cce solid 1px;
+   BORDER-RIGHT: #639cce solid 1px;
+   BORDER-TOP: 639cce solid 1px;
+   COLOR: #639cce;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 10px;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 16px;
+   MARGIN: 0px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 5px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 100%
+}
+.tbIconOff
+{
+   BACKGROUND-COLOR: #639cce;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 9px;
+   LETTER-SPACING: 0pt;
+   LINE-HEIGHT: 12px;
+   MARGIN: 0px 0px;
+   PADDING-BOTTOM: 1px;
+   PADDING-LEFT: 0px;
+   PADDING-RIGHT: 0px;
+   PADDING-TOP: 1px;
+   TEXT-DECORATION: none;
+   WIDTH: 16
+}
+.tbIconUp
+{
+   BACKGROUND-COLOR: #639cce;
+   BORDER-BOTTOM:black solid 1px;
+   BORDER-LEFT:  #ffffff solid 1px;
+   BORDER-RIGHT:  black solid 1px;
+   BORDER-TOP: #ffffff solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 9px;
+   LETTER-SPACING: 0pt;
+   LINE-HEIGHT: 0px;
+   MARGIN: 0px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 0px;
+   PADDING-RIGHT: 0px;
+   PADDING-TOP: 0px;
+   TEXT-DECORATION: none;
+   WIDTH: 16
+}
+A.aa
+{
+	 font-size:9pt;color:white ;text-decoration:none;
+}
+A.aa:visited
+{
+	color:white ; text-decoration:none;
+}  
+A.aa:hover
+{
+	color:white;
+}
+.ButtonText
+{
+	FONT-FAMILY: 楷体_GB2312; FONT-SIZE: 13pt; color=white; FONT-WEIGHT: bolder;
+}    

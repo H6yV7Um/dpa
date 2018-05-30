@@ -1,0 +1,200 @@
+<html>
+<head>
+<title></title>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<link rel="stylesheet" href="<!--{$RES_WEBPATH_PREF}-->dpa_html/css/List.css">
+<script language=javascript>
+	function actionclick(my_form,_action,cgi_url)
+	{
+		var spec = "?";
+		if(-1!= cgi_url.indexOf("?"))spec = "&";
+	
+		my_form.action=cgi_url;
+		my_form._action.value=_action;
+		if(_action =="insert")
+		{
+			var href = cgi_url + spec+"_action=" + _action;
+			window.self.open(href,"_self");
+			return true;
+		}
+		else
+		{
+			len = my_form.elements.length;
+			var index = 0;
+			var ele_checked=false;
+			for(index=0; index < len; index++ )
+			{
+				if((my_form.elements[index].name == "id" && _action == 'update') ||
+					 (my_form.elements[index].name == "id" && _action == 'delete') ||	
+					 (my_form.elements[index].name == "id" && _action == 'start') ||	
+					 (my_form.elements[index].name == "id" && _action == 'stop'))
+				{
+					var obj = my_form.elements["id"];
+					var len = obj.length;
+					var	check;
+					var check_count = 0;
+					var st_id;
+					if(len != null)
+					{
+						for(var i=0;i<len;i++)
+						{
+							check = obj[i].checked;
+							if(check == true)
+							{
+								st_id = obj[i].value;
+								check_count++;
+							}
+						}
+					}
+					else
+					{
+						check = obj.checked;
+						if(check == true)
+						{
+							st_id = obj.value;
+							check_count++;
+						}
+					}
+					if(check_count == 1)
+					{
+						if(_action=="delete")
+						{
+							if(!confirm("请确认是否真的删除该任务?"))
+							{
+								return false;
+							}
+						}
+						if(_action == 'start' || _action == 'stop')
+						{
+							//my_form.elements["do"].value="schedule_edit";
+							my_form.submit();
+    						return true;							
+						}
+						else
+						{
+							var href = cgi_url + spec+"id=" + st_id + "&_action=" + _action;
+							window.self.open(href,"_self");
+							return true;
+						}
+					}
+					else if(check_count == 0)
+					{
+						alert("你至少得选中一个任务!");
+					}
+					else
+					{
+						alert("一次只能执行一个任务!");
+					}
+					return false;
+				}
+			}
+			if(!ele_checked)
+			{
+				alert("请先选择一个任务");
+				return false;
+			}
+		} 
+	}
+
+function PlusQueryClick(a_id){
+	if(document.getElementById(a_id).style.display == "block"){
+		document.getElementById(a_id).style.display = "none";
+	}else{
+		document.getElementById(a_id).style.display = "block";
+	}
+}
+</script>
+</head>
+<body topmargin="5" leftmargin="5" bgcolor="#f2faff">
+<table border=0 bgcolor=#306e9f width="100%" cellspacing="0" cellpadding="3">
+  <tr>
+    <td nowrap style="text-align:left; color:#FFFFFF">当前位置: <a href='main.php?do=schedule_list' style="color:#FFF">计划任务</a> >
+      <!--{$nav}--></td>
+  </tr>
+</table>
+<table width="90%" border="0" cellpadding="2" cellspacing="2" >
+  <form method="post" action="main.php" name="myform_search">
+  <input type="hidden" name="do" value="<!--{$do}-->" />
+  <input type="hidden" name="<!--{$flag}-->" value="<!--{$p}-->" />
+  <input type="hidden" name="<!--{$pagesize_flag}-->" value="<!--{$pagesize}-->" />
+  
+  <input type="hidden" name="sql_where" value="<!--{$sql_where}-->" />
+  
+    <tr>
+      <td>搜索:
+        <select name="search_field_1">
+          <option value=""></option>
+          <!--{$field_option}-->
+        </select>
+        <select name="search_method_1">
+          <option value="" ></option>
+          <!--{$method_option}-->
+        </select>
+        <input name="search_value_1" value="" type="text" size="20" />
+        <input type="submit" name="submit" value="查 询">
+        <!-- tong shi tiao jian  -->
+        <input name='plus_query_1' onClick="PlusQueryClick('ID_QUERY_UNIT_2')" value='2'  type="checkbox">
+        并查
+        <div id="ID_QUERY_UNIT_2" style="display:none">
+          <input name="search_concat_2" type=radio value="and" checked>
+          同时
+          <input name="search_concat_2" type=radio value="or" >
+          或者
+          <select name="search_field_2">
+            <option value=""></option>
+            <!--{$field_option}-->
+          </select>
+          <select name="search_method_2">
+            <option value="" ></option>
+            <!--{$method_option}-->
+          </select>
+          <input name="search_value_2" value="" type="text" size="20" />
+        </div></td>
+    </tr>
+  </form>
+</table>
+<form action="main.php" name=myform method=post>
+  <input type="hidden" name="do" value="<!--{$do}-->" />
+  <input type="hidden" name="<!--{$flag}-->" value="<!--{$p}-->" />
+  <input type="hidden" name="<!--{$pagesize_flag}-->" value="<!--{$pagesize}-->" />
+  
+  <input type="hidden" name="sql_where" value="<!--{$sql_where}-->" />
+  <table border=0 cellpadding=0 cellspacing=0 width=100%>
+    <tr>
+      <td><hr size=1></td>
+    </tr>
+    <tr>
+      <td height=24 align=left><input type=hidden name="_action" value="select">
+        <input type=button value="增 加" onClick="actionclick(self.document.myform,'insert','main.php?do=schedule_step1');return false;">
+        <input type=button value="修 改" onClick="actionclick(self.document.myform,'update','main.php?do=schedule_step1');return false;">
+        <input type=button value="删 除" onClick="actionclick(self.document.myform,'delete','main.php?do=schedule_del');return false;">
+        <input type=button value="启 动" onClick="actionclick(self.document.myform,'start', 'main.php?do=schedule_edit');return true;">
+        <input type=button value="停 止" onClick="actionclick(self.document.myform,'stop',  'main.php?do=schedule_edit');return true;">
+      </td>
+    </tr>
+    <tr>
+      <td><hr size=1></td>
+    </tr>
+  </table>
+  <table width="98%" border="0" align="center" cellpadding="1" cellspacing="1">
+    <tr>
+      <td><div class="pages"><!--{$pagebar}--></div></td><td>每页显示: <input type="text" name="pagesize_form" size="6" /> 条 <input type="submit" value="设 置" /></td>
+    </tr>
+  </table>
+  <table align=center border=1 cellpadding=3 cellspacing=0 width="100%" bgcolor=#F3F3EE>
+    <tr bgcolor=#E5E5E5 height=35>
+      <!--{$schedule_show_title}-->
+    </tr>
+    <!--{$schedule_show}-->
+  </table>
+</form>
+<table width="98%" border="0" align="center" cellpadding="1" cellspacing="1">
+  <tr>
+    <td><div class="pages"><!--{$pagebar}--></div></td>
+  </tr>
+</table>
+</body>
+</html>
+<!-- CHT 2009-03-21 23:55:24 -->

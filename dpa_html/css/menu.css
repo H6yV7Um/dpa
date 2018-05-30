@@ -1,0 +1,179 @@
+	.LeftNavOff
+	{
+   BORDER-BOTTOM: #6699CC solid 1px;
+   BORDER-LEFT: #6699CC solid 1px;
+   BORDER-RIGHT: #6699CC solid 1px;
+   BORDER-TOP: #6699CC solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 9pt;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 0px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 3px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 1px;
+   TEXT-DECORATION: none;
+   WIDTH: 70px
+	}
+	.LeftNavUp
+	{
+   BORDER-BOTTOM: #333366 solid 1px;
+   BORDER-LEFT: white solid 1px;
+   BORDER-RIGHT: #333366 solid 1px;
+   BORDER-TOP: white solid 1px;
+   COLOR: #FFFF99;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 9pt;
+   HEIGHT: 0pt;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 0px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 3px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 1px;
+   TEXT-DECORATION: none;
+   WIDTH: 70px
+	}
+	.LeftNavDown
+	{
+   BORDER-BOTTOM: white solid 1px;
+   BORDER-LEFT: #000066 solid 1px;
+   BORDER-RIGHT: white solid 1px;
+   BORDER-TOP: #000066 solid 1px;
+   COLOR: #FFFFFF;
+   CURSOR: hand;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 9pt;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 0px 0px;
+   PADDING-BOTTOM: 0px;
+   PADDING-LEFT: 3px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 1px;
+   TEXT-DECORATION: none;
+   WIDTH: 70px
+	}
+	.LeftNavOn
+	{
+   BACKGROUND-COLOR: #FFA500;
+   BORDER-BOTTOM: #99CCFF solid 1px;
+   BORDER-LEFT: #000066 solid 1px;
+   BORDER-RIGHT: #99CCFF solid 1px;
+   BORDER-TOP: #000066 solid 1px;
+   COLOR: #666666;
+   FONT-FAMILY: verdana;
+   FONT-SIZE: 9px;
+   FONT-WEIGHT: bold;
+   LETTER-SPACING: -0.5pt;
+   LINE-HEIGHT: 20px;
+   MARGIN: 0px 0px;
+   PADDING-BOTTOM: 3px;
+   PADDING-LEFT: 3px;
+   PADDING-RIGHT: 3px;
+   PADDING-TOP: 3px;
+   TEXT-DECORATION: none;
+   WIDTH: 60px
+	}
+	.tblbody
+{
+	BACKGROUND: #6699cc;
+	BORDER-BOTTOM: #30404f 1px solid;
+	BORDER-LEFT: #b8d2e9 1px solid;
+	BORDER-RIGHT: #30404f 1px solid;
+	BORDER-TOP: #b8d2e9 1px solid
+}
+.Lbtn
+{
+    BACKGROUND-COLOR: #bfbfbf;
+    COLOR: #0000a0;
+    FONT-FAMILY:宋体;
+    FONT-SIZE: 9pt;
+    HEIGHT: 20px;
+    WIDTH: 60px
+}
+.table
+{
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 12pt
+}
+.btn
+{
+    BACKGROUND-COLOR: #ebf3f5;
+    COLOR: #0000a0;
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    HEIGHT: 24px;
+    WIDTH: 100%
+}
+.ButtonNormal
+{
+	BORDER-BOTTOM: #DEEBFF solid 1px;
+	BORDER-LEFT: DEEBFF solid 1px;
+	BORDER-RIGHT: #DEEBFF solid 1px;
+	BORDER-TOP: DEEBFF solid 1px;
+	COLOR: #0000a0;
+	CURSOR: hand;
+	FONT-FAMILY: verdana;
+	FONT-SIZE: 14px;
+	LETTER-SPACING: -0.5pt;
+	LINE-HEIGHT: 24px;
+	MARGIN: 0px 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 5px;
+	PADDING-RIGHT: 5px;
+	PADDING-TOP: 0px;
+	TEXT-DECORATION: none;
+	WIDTH: 70px;
+	vertical-align: middle
+}
+
+.ButtonUp
+{
+	BORDER-BOTTOM: #333366 solid 1px;
+	BORDER-LEFT: white solid 1px;
+	BORDER-RIGHT: #333366 solid 1px;
+	BORDER-TOP: white solid 1px;
+	COLOR: #0000a0;
+	CURSOR: hand;
+	FONT-FAMILY: verdana;
+	FONT-SIZE: 14px;
+	HEIGHT: 0pt;
+	LETTER-SPACING: -0.5pt;
+	LINE-HEIGHT: 24px;
+	MARGIN: 0px 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 5px;
+	PADDING-RIGHT: 5px;
+	PADDING-TOP: 0px;
+	TEXT-DECORATION: none;
+	WIDTH: 70px;
+	vertical-align: middle
+}
+
+.ButtonDown
+{
+	BORDER-BOTTOM: white solid 1px;
+	BORDER-LEFT: #000066 solid 1px;
+	BORDER-RIGHT: white solid 1px;
+	BORDER-TOP: #000066 solid 1px;
+	COLOR: #0000a0;
+	CURSOR: hand;
+	FONT-FAMILY: verdana;
+	FONT-SIZE: 14px;
+	LETTER-SPACING: -0.5pt;
+	LINE-HEIGHT: 24px;
+	MARGIN: 0px 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 5px;
+	PADDING-RIGHT: 5px;
+	PADDING-TOP: 0px;
+	TEXT-DECORATION: none;
+	WIDTH: 70px;
+	vertical-align: middle
+}

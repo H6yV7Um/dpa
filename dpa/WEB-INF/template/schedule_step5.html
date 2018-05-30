@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<style type=text/css>
+td,p,input,select {font-family:宋体;font-size:12px;}
+.ttd {font-family:宋体;font-size:14px;color=#000000}
+A.title1:link {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:visited {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:active {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:hover {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+
+A.title3:link {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:visited {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:active {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:hover {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+</style>
+<script type="text/javascript">
+function goprex()
+{
+	var form=document.myform;
+	form.getElementsByTagName("input")["do"].value="schedule_step4";
+	
+	// add new elements
+	var newInput = document.createElement("input");
+	newInput.type="hidden"; 
+	newInput.name="rewind";
+	newInput.value=1;
+	form.appendChild(newInput);
+	
+	form.submit();
+	return true;
+}
+function Validate()
+{
+	var form=document.myform;
+	if("update"==form.elements['_action'].value)
+	{
+		form.elements['do'].value = "schedule_edit";
+	}
+	
+	return true;
+}
+</script>
+</head>
+<body bgcolor=#f2faff leftmargin=5 topmargin=5 marginwidth=0 marginheight=0>
+<form method="post" name="myform" action='main.php' onSubmit='return Validate();'>
+  <input type="hidden" name="do" value="schedule_add" />
+  <input type="hidden" name="_action" value="<!--{$_action}-->" />
+  <input type="hidden" name="id" value='<!--{$id}-->' />
+  
+  <input type="hidden" name="name" value='<!--{$name}-->' />
+  <input type="hidden" name="host" value='<!--{$host}-->' />
+  <input type="hidden" name="server_timezone" value='<!--{$server_timezone}-->' />
+  <input type="hidden" name="belong_user" value='<!--{$belong_user}-->' />
+  
+  <input type="hidden" name="minute" value='<!--{$minute}-->' />
+  <input type="hidden" name="hour" value='<!--{$hour}-->' />
+  <input type="hidden" name="day" value='<!--{$day}-->' />
+  <input type="hidden" name="month" value='<!--{$month}-->' />
+  <input type="hidden" name="week" value='<!--{$week}-->' />
+  <input type="hidden" name="forbidden_date" value='<!--{$forbidden_date}-->' />
+  <input type="hidden" name="forbidden_timezone" value='<!--{$forbidden_timezone}-->' />
+  
+  <input type="hidden" name="mode" value='<!--{$mode}-->' />
+  <input type="hidden" name="shell_command" value="<!--{$shell_command}-->" />
+  <!--<input type="hidden" name="doc_list" value='' /> -->
+  <center>
+    <table border=0 cellpadding=0 cellspacing=0 width=100%>
+      <tr>
+        <td  height=24 class=ttd bgcolor=#f2faff align=center>创建任务(第五步：完成)</td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr>
+        <td height=2 bgcolor=#000000><img src='<!--{$RES_WEBPATH_PREF}-->dpa_html/images/c.gif' width=1 height=1></td>
+      </tr>
+    </table>
+    <table align=center border=0 cellpadding=0 cellspacing=0 width=100% class=ttd bgcolor=#F3F3EE>
+      <tr height=30>
+        <td nowrap align=right>任务名称:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><!--{$name}--></td>
+      </tr>
+	  <tr height=30>
+        <td nowrap align=right>执行主机:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><!--{$host}--> （所属时区：<!--{$server_timezone}-->）</td>
+      </tr>
+	  <tr height=30>
+        <td nowrap align=right>执行时间设置:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap> <!--{$minute}-->&nbsp; <!--{$hour}-->&nbsp; <!--{$day}-->&nbsp; <!--{$month}-->&nbsp; <!--{$week}--></td>
+      </tr>
+	  <tr height=30>
+        <td nowrap align=right>禁止执行日期:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap> <!--{$forbidden_date}--> （所属时区：<!--{$forbidden_timezone}-->）</td>
+      </tr>
+	  <tr height=30>
+        <td nowrap align=right>执行的命令:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><!--{$shell_command}--></td>
+      </tr>
+      <!--<tr height=30>
+        <td nowrap align=right>选中的项目:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap> 汽车 </td>
+      </tr>
+      <tr height=40>
+        <td nowrap align=right>选中的模板:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap> JS模板 </td>
+	  </tr> -->
+      <tr>
+        <td nowrap align=right>说明:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><textarea name="description" cols="32" rows="4" wrap="physical"><!--{$description}--></textarea></td>
+      </tr>
+	  <tr height=60>
+        <td nowrap align=right><input type=button value='上一步' onClick='goprex();'></td>
+        <td width=10>&nbsp;</td>
+        <td nowrap>&nbsp;
+          <input type=submit value='完成'>
+          &nbsp;
+          <input type=button onClick="window.open('main.php?do=schedule_list', '_self');" value='取消'>
+        </td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr bgcolor=#D9E2D0>
+        <td height=25 bgcolor=F3F3EE><br>
+        </td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr>
+        <td height=2 bgcolor=#000000><img src='<!--{$RES_WEBPATH_PREF}-->dpa_html/images/c.gif' width=1 height=1></td>
+      </tr>
+    </table>
+  </center>
+</form>
+</body>
+</html>
+<!-- CHT 2009-04-27 20:58:10 -->

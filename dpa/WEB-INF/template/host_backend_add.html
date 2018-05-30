@@ -1,0 +1,128 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<script language=javascript src="<!--{$RES_WEBPATH_PREF}-->dpa_html/gfunc.js"></script>
+<link rel="stylesheet" href="<!--{$RES_WEBPATH_PREF}-->dpa_html/css/List.css">
+<script language=javascript>
+function validForm(oForm)
+{
+	if(oForm.elements["host_name"].value == "")
+	{
+		alert("主机名称不能为空!");
+		return false;
+	}
+	else if(oForm.elements["host_label"].value == "")
+	{
+		alert("主机编号不能为空!");
+		return false;
+	}
+	else if(oForm.elements["host_os"].value == "")
+	{
+		alert("主机操作系统不能为空!");
+		return false;
+	}
+	else if(oForm.elements["host_ip"].value == "")
+	{
+		alert("主机IP地址不能为空!");
+		return false;
+	}
+
+	else
+	{
+		oForm.submit();
+	}
+}
+
+function hostEntry(oForm)
+{
+	oForm.elements["host_entry"].value = "http://" + oForm.elements["host_domain"].value + ":" + oForm.elements["host_port"].value + "/" + oForm.elements["host_root"].value;
+}
+</script>
+</head>
+<body topmargin="0" leftmargin="0" bgcolor="#f2faff">
+<form method=post action="" name=myform>
+<input type="hidden" name="do" value="host_backend_add">
+<input type="hidden" name="opt" value="add">
+<table bgcolor=#306e9f border="0" width="100%" cellspacing="2" cellpadding="3">
+  <tr>
+    <td width="50%" nowrap align=left>当前位置:/<a href = '?do=host_backend_list'>后端主机管理</a></td>
+    <td width="50%" nowrap align=right>编辑后端主机信息</td>
+  </tr>
+</table>
+<hr size=1>
+
+<table border="0" width="100%" cellspacing="2" cellpadding="0">
+	<tr>
+		<td><input type=button onClick="validForm(self.document.myform);" value="注 册"></td>
+		<td><input type="reset" value="重 写" name="reset"></td>
+	</tr>
+</table>
+
+
+<hr size=1>
+
+<table align=center border=0  bgColor=#f2faff cellPadding=1 cellSpacing=0 width="95%">
+	<tr nowrap bgcolor=#306e9f height=35 align=middle><td colspan=2>主机信息</td></tr>
+	<tr height=30>
+		<td valign=top nowrap>名称</td>
+		<td><input type="text" size="40" name="host_name"></td>
+	</tr>
+
+	<tr height=30>
+		<td valign=top nowrap>编号</td>
+		<td><input type="text" size="40" name="host_label"></td>
+	</tr>
+
+	<tr height=30>
+		<td valign=top nowrap>操作系统</td>
+		<td>
+			<select name="host_os">
+				<!--{$host_os_options}-->
+			</select>
+		</td>
+	</tr>
+	<!--
+	<tr height=30>
+		<td valign=top nowrap>域名</td>
+		<td><input type="text" size="40" name="host_domain" onKeyUp   = "hostEntry(self.document.myform)"></td>
+	</tr>
+	 -->
+	<tr height=30>
+		<td valign=top nowrap>IP地址</td>
+		<td><input type="text" size="40" name="host_ip"></td>
+	</tr>
+
+	<!--<tr height=30>
+		<td valign=top nowrap>端口</td>
+		<td><input type="text" size="40" name="host_port" onKeyUp   = "hostEntry(self.document.myform)"></td>
+	</tr> -->
+
+	<!--<tr height=30>
+		<td valign=top nowrap>根路径</td>
+		<td><input type="text" size="40" name="host_root" onKeyUp   = "hostEntry(self.document.myform)"></td>
+	</tr> -->
+
+	<tr height=30>
+		<td valign=top nowrap>备注</td>
+		<td><textarea name="description" rows=3 cols=40></textarea></td>
+	</tr>
+
+	<!--<tr height=30>
+		<td valign=top nowrap>发布入口</td>
+		<td><input type="text" size = 50 name="host_entry" disabled bgcolor=gray></td>
+	</tr> -->
+</table>
+<hr size=1>
+
+<table border="0" width="100%" cellspacing="2" cellpadding="0">
+	<tr>
+		<td><input type=button onClick="validForm(self.document.myform);" value="注 册"></td>
+		<td><input type="reset" value="重 写" name="reset"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
+<!-- CHT 2009-03-21 22:50:53 -->

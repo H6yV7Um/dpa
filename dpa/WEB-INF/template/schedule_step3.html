@@ -1,0 +1,221 @@
+<html>
+<head>
+<title></title>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<style type=text/css>
+td,p,input,select {font-family:宋体;font-size:12px;}
+.ttd {font-family:宋体;font-size:14px;color=#000000}
+A.title1:link {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:visited {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:active {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:hover {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+
+A.title3:link {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:visited {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:active {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:hover {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+</style>
+<SCRIPT  LANGUAGE=javascript>
+function goprex()
+{
+	var form=document.myform;
+	form.getElementsByTagName("input")["do"].value="schedule_step2";
+	
+	// add new elements
+	var newInput = document.createElement("input");
+	newInput.type="hidden"; 
+	newInput.name="rewind";
+	newInput.value=1;
+	form.appendChild(newInput);
+	
+	form.submit();
+	return true;
+}
+
+function Validate()
+{
+	var form=document.myform;
+	if(! checkSelected(form.elements['hour[]']))
+	{
+		window.alert('请对小时进行设置！');
+		return false;
+	}
+
+	if(! checkSelected(form.elements['minute[]']))
+	{
+		window.alert('请对分钟进行设置！');
+		return false;
+	}
+	
+	if(! checkSelected(form.elements['month[]']))
+	{
+		window.alert('请对月份进行设置！');
+		return false;
+	}
+
+	if(! checkSelected(form.elements['day[]']))
+	{
+		window.alert('请对天日进行设置！');
+		return false;
+	}
+		
+	if(! checkSelected(form.elements['week[]']))
+	{
+		window.alert('请选择一个星期中的一天。\n\n当明确指定了月和日时，\n星期设置为“所有”表示对星期的设置无效。');
+		return false;
+	}
+	
+	return true;
+}
+
+function checkSelected(obj)
+{
+	for(var i=0; i<obj.length; i++)
+	{
+		if(obj[i].checked) return true;
+	}
+	return false;
+}
+
+function selChange(obj_name, curIdx, endIdx)
+{
+	var obj=document.myform.elements[obj_name];
+	var checked=obj[curIdx].checked;
+
+	if(! checked) return true;	
+	if(curIdx==0)
+	{
+		for(var i=1; i<=endIdx; i++) obj[i].checked=false;
+	}
+	else
+	{
+		obj[0].checked=false;
+	}
+		
+	return true;
+}
+
+</SCRIPT>
+</head>
+<body bgcolor=#f2faff leftmargin=5 topmargin=5 marginwidth=0 marginheight=0>
+<form method=post name=myform action='main.php' onSubmit='return Validate();'>
+  <input type="hidden" name="do" value="schedule_step4">
+  <input type="hidden" name="_action" value="<!--{$_action}-->" />
+  <input type="hidden" name="id" value='<!--{$id}-->' />
+  
+  <input type="hidden" name="name" value='<!--{$name}-->' />
+  <input type="hidden" name="host" value='<!--{$host}-->' />
+  <input type="hidden" name="server_timezone" value='<!--{$server_timezone}-->' />
+  
+  <input type="hidden" name="belong_user" value='<!--{$belong_user}-->' />
+  <center>
+    <table border=0 cellpadding=0 cellspacing=0 width=100%>
+      <tr>
+        <td height=24 class=ttd bgcolor=#f2faff align=center>创建任务(第三步：设置时间)</td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr>
+        <td height=2 bgcolor=#000000><img src='<!--{$RES_WEBPATH_PREF}-->dpa_html/images/c.gif' width=1 height=1></td>
+      </tr>
+    </table>
+    <table align=center border=0 cellpadding=0 cellspacing=0 width=100% class=ttd bgcolor=#F3F3EE>
+      <tr height=40>
+        <td nowrap align=right>任务名称:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><!--{$name}--></td>
+      </tr>
+      <tr>
+        <td nowrap align=right><font color=blue>分钟:</font></td>
+        <td width=10>&nbsp;</td>
+        <td nowrap>
+<!--{$minute}-->
+        </td>
+      </tr>
+	  <tr height=15>
+        <td><br /></td>
+      </tr>
+	  <tr>
+        <td nowrap align=right><font color=blue>小时</font>:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap>
+<!--{$hour}-->
+        </td>
+      </tr>
+      <tr height=15>
+        <td><br /></td>
+      </tr>
+	  <tr>
+        <td nowrap align=right><font color=blue>日:</font></td>
+        <td width=10>&nbsp;</td>
+        <td nowrap>
+<!--{$day}-->
+        </td>
+      </tr>
+      <tr height=15>
+        <td><br /></td>
+      </tr>
+      <tr>
+        <td nowrap align=right><font color=blue>月:</font></td>
+        <td width=10>&nbsp;</td>
+        <td nowrap>
+<!--{$month}-->
+        </td>
+      </tr>
+      <tr height=15>
+        <td><br /></td>
+      </tr>
+      <tr>
+        <td nowrap align=right><font color=blue>星期:</font></td>
+        <td width=10>&nbsp;</td>
+        <td nowrap>
+<!--{$week}-->
+        </td>
+      </tr>
+	  <tr height=15>
+        <td><br /></td>
+      </tr>
+      <tr>
+        <td nowrap align=right><font color=blue>以下日期不用执行:</font></td>
+        <td width=10>&nbsp;</td>
+        <td><input type="text" name="forbidden_date" size="40" value="<!--{$forbidden_date}-->" />(以半角逗号分隔，不超过10条,如2009-10-01)</td>
+      </tr>
+	  <tr height=15>
+        <td><br /></td>
+      </tr>
+      <tr>
+        <td nowrap align=right><font color=blue>禁止执行的日期所属时区:</font></td>
+        <td width=10>&nbsp;</td>
+        <td><select name='forbidden_timezone' type=select>
+            <!--{$forbidden_timezone_options}-->
+          </select>(默认为北京时间，也许不希望在美国冬令时的某个日期执行)</td>
+      </tr>
+      <tr height=60>
+        <td nowrap align=right><input type=button value='上一步' onClick="goprex();"></td>
+        <td width=10>&nbsp;</td>
+        <td nowrap>&nbsp;
+          <input type=submit value='下一步'>
+          &nbsp;
+          <input type=button onClick="window.open('main.php?do=schedule_list','_self');" value='取消'>
+        </td>
+        </td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr bgcolor=#D9E2D0>
+        <td height=25 bgcolor=F3F3EE><br>
+        </td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr>
+        <td height=2 bgcolor=#000000><img src='<!--{$RES_WEBPATH_PREF}-->dpa_html/images/c.gif' width=1 height=1></td>
+      </tr>
+    </table>
+  </center>
+</form>
+</body>
+</html>
+<!-- CHT 2009-04-27 20:47:21 -->

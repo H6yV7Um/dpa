@@ -1,0 +1,151 @@
+<html>
+<head>
+<title></title>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<style type=text/css>
+td,p,input,select {font-family:宋体;font-size:12px;}
+.ttd {font-family:宋体;font-size:14px;color=#000000}
+A.title1:link {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:visited {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:active {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:hover {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+
+A.title3:link {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:visited {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:active {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:hover {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+</style>
+<script type="text/javascript">
+function goprex()
+{
+	var form=document.myform;
+	form.getElementsByTagName("input")["do"].value="schedule_step1";
+	
+	// add new elements
+	var newInput = document.createElement("input");
+	newInput.type="hidden"; 
+	newInput.name="rewind";
+	newInput.value=1;
+	form.appendChild(newInput);
+	
+	form.submit();
+	return true;
+}
+
+function Validate()
+{
+	var form=document.myform;
+	if(form.belong_user.value==""){
+		window.alert('请填写执行账号！');
+		form.belong_user.focus();
+		return false;
+	}
+		
+	return true;
+}
+
+</script>
+</head>
+<body bgcolor=#f2faff leftmargin=5 topmargin=5 marginwidth=0 marginheight=0>
+<form method=post name=myform action='main.php' onSubmit='return Validate();'>
+  <input type="hidden" name="do" value="schedule_step3" />
+  <input type="hidden" name="_action" value="<!--{$_action}-->" />
+  <input type="hidden" name="id" value='<!--{$id}-->' />
+  
+  <input type="hidden" name="name" value='<!--{$name}-->' />
+  <input type="hidden" name="host" value='<!--{$host}-->' />
+  <input type="hidden" name="server_timezone" value='<!--{$server_timezone}-->' />
+  <center>
+    <table border=0 cellpadding=0 cellspacing=0 width=100%>
+      <tr>
+        <td  height=24 class=ttd bgcolor=#f2faff align=center>创建任务(第二步：执行账号)</td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr>
+        <td height=2 bgcolor=#000000><img src='<!--{$RES_WEBPATH_PREF}-->dpa_html/images/c.gif' width=1 height=1></td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr bgcolor=#D9E2D0>
+        <td height=24 bgcolor=F3F3EE><br>
+        </td>
+      </tr>
+    </table>
+    <table align=center border=0 cellpadding=0 cellspacing=0 width=100% class=ttd bgcolor=#F3F3EE>
+      <tr height=30>
+        <td nowrap width=20% align=right>任务名称:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><!--{$name}--></td>
+      </tr>
+	  <tr height=30>
+        <td nowrap align=right>执行主机:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap> <!--{$host}--> </td>
+      </tr>
+	  <tr height=30>
+        <td nowrap align=right>执行账号:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><input type="text" name="belong_user" value="<!--{$belong_user}-->" />(或root等)</td>
+      </tr>
+      <!--<tr height=30>
+        <td nowrap align=right>所选项目:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap> 汽车 </td>
+      </tr>
+      <tr height=30>
+        <td nowrap align=right>待选模板:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><select name=t_id type=select>
+            <option value='1' >页面碎片</option>
+            <option value='2' >正文页</option>
+            <option value='3' >栏目配置</option>
+            <option value='4' >媒体配置</option>
+            <option value='5' >CSS模板</option>
+            <option value='6' >JS模板</option>
+            <option value='7' >栏目页</option>
+            <option value='8' >专题页</option>
+            <option value='9' >图片上传</option>
+            <option value='10' >空白模板</option>
+            <option value='11' >专题子栏目页</option>
+            <option value='12' >页面碎片预览</option>
+            <option value='13' >页面碎片分类</option>
+            <option value='14' >功能代码</option>
+            <option value='15' >图片栏目页</option>
+            <option value='16' >汽车首页</option>
+            <option value='17' >图片幻灯</option>
+            <option value='18' >地区列表页</option>
+            <option value='19' >百度新闻搜索接口</option>
+            <option value='20' >封面秀</option>
+          </select>
+        </td>
+      </tr> -->
+      <tr height=60>
+        <td nowrap align=right><input type=button value='上一步' onClick='goprex();'></td>
+        <td width=10>&nbsp;</td>
+        <td nowrap>&nbsp;
+          <input type=submit value='下一步'>
+          &nbsp;
+          <input type=button onClick="window.open('main.php?do=schedule_list', '_self');" value='取消'>
+        </td>
+        </td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr bgcolor=#D9E2D0>
+        <td height=25 bgcolor=F3F3EE><br>
+        </td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr>
+        <td height=2 bgcolor=#000000><img src='<!--{$RES_WEBPATH_PREF}-->dpa_html/images/c.gif' width=1 height=1></td>
+      </tr>
+    </table>
+  </center>
+</form>
+</body>
+</html>
+<!-- CHT 2009-04-27 20:39:45 -->

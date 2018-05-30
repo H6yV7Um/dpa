@@ -1,0 +1,41 @@
+以将表中 deleted字段变为status_字段为例
+
+1. PHP程序中搜索所有的 deleted 相应地全部替换为status_。其中的deleted=0换为status_='use'
+2. SQL文件中搜索deleted,相应地修改为status_
+3. 所有的表执行语句，类似于:
+   ALTER TABLE `aups_t001` CHANGE `deleted` `status_` ENUM( 'use', 'stop', 'test', 'del', 'scrap' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'use' COMMENT '状态, 使用、停用等' ;
+   同时还要将相应记录中的原来的数值进行修改
+   update `aups_t001` set `status_`='use' where `status_` in ('0',null,0);
+4. 在字段定义表中执行语句，
+   update `dpps_field_def` set `name_eng`='status_',`name_cn`='状态',`length`='''use'',''stop'',''test'',''del'',''scrap''',`default`='use',`description`='状态, 使用、停用等' where `name_eng`='deleted';
+5. 测试以后上传到服务器
+
+
+
+--  --------------------------
+ALTER TABLE `aups_t001` CHANGE `deleted` `status_` ENUM( 'use', 'stop', 'test', 'del', 'scrap' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'use' COMMENT '状态, 使用、停用等' ;
+ALTER TABLE `aups_t002` CHANGE `deleted` `status_` ENUM( 'use', 'stop', 'test', 'del', 'scrap' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'use' COMMENT '状态, 使用、停用等' ;
+ALTER TABLE `aups_t003` CHANGE `deleted` `status_` ENUM( 'use', 'stop', 'test', 'del', 'scrap' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'use' COMMENT '状态, 使用、停用等' ;
+ALTER TABLE `aups_t004` CHANGE `deleted` `status_` ENUM( 'use', 'stop', 'test', 'del', 'scrap' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'use' COMMENT '状态, 使用、停用等' ;
+ALTER TABLE `aups_t005` CHANGE `deleted` `status_` ENUM( 'use', 'stop', 'test', 'del', 'scrap' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'use' COMMENT '状态, 使用、停用等' ;
+ALTER TABLE `aups_t006` CHANGE `deleted` `status_` ENUM( 'use', 'stop', 'test', 'del', 'scrap' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'use' COMMENT '状态, 使用、停用等' ;
+ALTER TABLE `aups_t007` CHANGE `deleted` `status_` ENUM( 'use', 'stop', 'test', 'del', 'scrap' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'use' COMMENT '状态, 使用、停用等' ;
+ALTER TABLE `aups_t008` CHANGE `deleted` `status_` ENUM( 'use', 'stop', 'test', 'del', 'scrap' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'use' COMMENT '状态, 使用、停用等' ;
+ALTER TABLE `aups_t009` CHANGE `deleted` `status_` ENUM( 'use', 'stop', 'test', 'del', 'scrap' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'use' COMMENT '状态, 使用、停用等' ;
+ALTER TABLE `aups_t010` CHANGE `deleted` `status_` ENUM( 'use', 'stop', 'test', 'del', 'scrap' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'use' COMMENT '状态, 使用、停用等' ;
+ALTER TABLE `aups_t011` CHANGE `deleted` `status_` ENUM( 'use', 'stop', 'test', 'del', 'scrap' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'use' COMMENT '状态, 使用、停用等' ;
+
+update `aups_t001` set `status_`='use' where `status_` in ('0',null,0);
+update `aups_t002` set `status_`='use' where `status_` in ('0',null,0);
+update `aups_t003` set `status_`='use' where `status_` in ('0',null,0);
+update `aups_t004` set `status_`='use' where `status_` in ('0',null,0);
+update `aups_t005` set `status_`='use' where `status_` in ('0',null,0);
+update `aups_t006` set `status_`='use' where `status_` in ('0',null,0);
+update `aups_t007` set `status_`='use' where `status_` in ('0',null,0);
+update `aups_t008` set `status_`='use' where `status_` in ('0',null,0);
+update `aups_t009` set `status_`='use' where `status_` in ('0',null,0);
+update `aups_t010` set `status_`='use' where `status_` in ('0',null,0);
+update `aups_t011` set `status_`='use' where `status_` in ('0',null,0);
+
+
+update `dpps_field_def` set `name_eng`='status_',`name_cn`='状态',`length`='''use'',''stop'',''test'',''del'',''scrap''',`default`='use',`description`='状态, 使用、停用等' where `name_eng`='deleted';

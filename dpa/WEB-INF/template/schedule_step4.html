@@ -1,0 +1,181 @@
+<html>
+<head>
+<title></title>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<style type=text/css>
+td,p,input,select {font-family:宋体;font-size:12px;}
+.ttd {font-family:宋体;font-size:14px;color=#000000}
+A.title1:link {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:visited {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:active {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+A.title1:hover {font-family:宋体;text-decoration:none;color:#000000;font-size:14px;}
+
+A.title3:link {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:visited {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:active {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+A.title3:hover {font-family:宋体;text-decoration:underline;color:#57699B;font-size:12px;}
+</style>
+<SCRIPT  LANGUAGE=javascript>
+function goprex()
+{
+	var form=document.myform;
+	form.getElementsByTagName("input")["do"].value="schedule_step3";
+	
+	// add new elements
+	var newInput = document.createElement("input");
+	newInput.type="hidden"; 
+	newInput.name="rewind";
+	newInput.value=1;
+	form.appendChild(newInput);
+	
+	form.submit();
+	return true;
+}
+function Validate()
+{
+	var form=document.myform;
+	var obj=form.elements["mode"];
+	if(! checkSelected(obj))
+	{
+		window.alert('请选择任务模式！');
+		return false;
+	}
+
+	for(var i=0; i<obj.length; i++)
+	{
+		if(obj[i].checked){
+			if(obj[i].value == "0"){
+				if(form.doc_list.value == ""){
+					window.alert('请填写文档号列表！');
+					form.doc_list.focus();
+					return false;				
+				}
+			}
+					
+			if(obj[i].value == "1"){
+				if(form.shell_command.value == ""){
+					window.alert('请填写shell命令！');
+					form.shell_command.focus();
+					return false;				
+				}
+			}
+			
+		}
+	}
+
+	return true;
+}
+
+function checkSelected(obj)
+{
+	for(var i=0; i<obj.length; i++)
+	{
+		if(obj[i].checked) return true;
+	}
+	return false;
+}
+</SCRIPT>
+</head>
+<body bgcolor=#f2faff leftmargin=5 topmargin=5 marginwidth=3 marginheight=0>
+<form method=post name=myform action='main.php' onSubmit='return Validate();'>
+  <input type="hidden" name="do" value="schedule_step5" />
+  <input type="hidden" name="_action" value="<!--{$_action}-->" />
+  <input type="hidden" name="id" value='<!--{$id}-->' />
+  
+  <input type="hidden" name="name" value='<!--{$name}-->' />
+  <input type="hidden" name="host" value='<!--{$host}-->' />
+  <input type="hidden" name="server_timezone" value='<!--{$server_timezone}-->' />
+  <input type="hidden" name="belong_user" value='<!--{$belong_user}-->' />
+  
+  <input type="hidden" name="minute" value='<!--{$minute}-->' />
+  <input type="hidden" name="hour" value='<!--{$hour}-->' />
+  <input type="hidden" name="day" value='<!--{$day}-->' />
+  <input type="hidden" name="month" value='<!--{$month}-->' />
+  <input type="hidden" name="week" value='<!--{$week}-->' />
+  <input type="hidden" name="forbidden_date" value='<!--{$forbidden_date}-->' />
+  <input type="hidden" name="forbidden_timezone" value='<!--{$forbidden_timezone}-->' />
+  <center>
+    <table border=0 cellpadding=0 cellspacing=0 width=100%>
+      <tr>
+        <td  height=24 class=ttd bgcolor=#f2faff align=center>创建任务(第四步：设定任务模式、以及执行的命令)</td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr>
+        <td height=2 bgcolor=#000000><img src='<!--{$RES_WEBPATH_PREF}-->dpa_html/images/c.gif' width=1 height=1></td>
+      </tr>
+    </table>
+    <table align=center border=0 cellpadding=0 cellspacing=0 width=100% class=ttd bgcolor=#F3F3EE>
+      <tr height=30>
+        <td nowrap align=right>任务名称:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><!--{$name}--></td>
+      </tr>
+      <!--<tr height=30>
+        <td nowrap align=right>所选项目:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap> 汽车 </td>
+      <tr>
+      <tr height=30>
+        <td nowrap align=right>所选模板:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap> JS模板 </td>
+      </tr> -->
+      <tr height=30>
+        <td nowrap align=right>任务模式:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><table border=1 width=99% cellpadding=0 cellspacing=0>
+            <tr>
+              <td><input name='mode' type='radio' value="0" disabled="disabled">
+                批量发布</td>
+              <td><input type='text' name='doc_list' value='暂时不可用' size='40' disabled="disabled">
+                文档号列表(用西文逗号分隔，SQL where查询语句)</td>
+            </tr>
+            <!--<tr>
+              <td colspan=3><input name=mode type=radio  value="2">
+                文档添加任务</td>
+            </tr> -->
+            <tr>
+              <td><input name='mode' type='radio' value="1" checked="checked">
+                命令行</td>
+              <td><input name='shell_command' type='text' size='40' value="<!--{$shell_command}-->">
+                执行shell 或 php 命令</td>
+            <tr>
+          </table></td>
+      </tr>
+      <!--<tr height=30>
+        <td nowrap align=right>发布方式:</td>
+        <td width=10>&nbsp;</td>
+        <td nowrap><input name=_jit type=radio checked value="no">
+          非即时相关发布
+          <input name=_jit type=radio  value="yes">
+          即时相关发布 </td>
+      </tr> -->
+      <tr height=60>
+        <td nowrap align=right><input type=button value='上一步' onClick='goprex();'></td>
+        <td width=10>&nbsp;</td>
+        <td nowrap>&nbsp;
+          <input type=submit value='下一步'>
+          &nbsp;
+          <input type=button onClick="window.open('main.php?do=schedule_list', '_self');" value='取消'>
+        </td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr bgcolor=#D9E2D0>
+        <td height=25 bgcolor=F3F3EE><br>
+        </td>
+      </tr>
+    </table>
+    <table border=0 width=100% cellpadding=0 cellspacing=0>
+      <tr>
+        <td height=2 bgcolor=#000000><img src='<!--{$RES_WEBPATH_PREF}-->dpa_html/images/c.gif' width=1 height=1></td>
+      </tr>
+    </table>
+  </center>
+</form>
+</body>
+</html>
+<!-- CHT 2009-04-27 20:51:30 -->

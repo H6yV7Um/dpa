@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title><!--{$html_title}--></title>
+<script type="text/javascript" language="javascript" src="<!--{$RES_WEBPATH_PREF}-->dpa_html/gfunc.js"></script>
+<script type="text/javascript" language="javascript" src="<!--{$RES_WEBPATH_PREF}-->dpa_html/JSLib/JSFunc.js"></script>
+<script type="text/javascript" language="javascript" src="<!--{$RES_WEBPATH_PREF}-->dpa_html/JSLib/LibFunc.js"></script>
+<script type="text/javascript" language="javascript" src="<!--{$RES_WEBPATH_PREF}-->dpa_html/JSLib/LibPrj.js"></script>
+<script type="text/javascript" language="javascript" src="<!--{$RES_WEBPATH_PREF}-->dpa_html/JSLib/typeset.js"></script>
+<script type="text/javascript" language="javascript" src="<!--{$RES_WEBPATH_PREF}-->dpa_html/JSLib/LibDoc.js"></script>
+
+<script language="javascript" src="<!--{$RES_WEBPATH_PREF}-->dpa_html/ckeditor/ckeditor.js"></script>
+<script language="javascript" src="<!--{$RES_WEBPATH_PREF}-->dpa_html/JSLib/HTMLEditor.js"></script>
+<link rel="stylesheet" href="<!--{$RES_WEBPATH_PREF}-->dpa_html/css/List.css" />
+<link rel="stylesheet" href="<!--{$RES_WEBPATH_PREF}-->dpa_html/htmleditor/js/edit.css">
+<script type="text/javascript" language="javascript" src="<!--{$RES_WEBPATH_PREF}-->dpa_html/htmleditor/js/WebUIValidation.js"></script>
+<script type="text/vbscript"   language="vbscript"   src="<!--{$RES_WEBPATH_PREF}-->dpa_html/JSLib/checkrepeatnews.vbs"></script>
+<script type="text/javascript" language="javascript" src="<!--{$RES_WEBPATH_PREF}-->dpa_html/JSLib/checkrepeatnews.js"></script>
+<!--{$js_code_add_edit}-->
+</head>
+<body style="margin:0; background-color:#f2faff">
+<table bgcolor="#306e9f" border="0" width="100%" cellspacing="0" cellpadding="3">
+  <tr>
+    <td width="50%" nowrap="nowrap" align="left"><!--{$tpl_dangqianweizhi}-->:<!--{$parent_nav}-->/<!--{$html_name}--></td>
+  </tr>
+</table>
+<hr size="1" />
+<table width='100%' cellpadding="3" cellspacing='0'>
+  <!--{$l_other}-->
+  <tr style='display:inline' id='id_project_add_1'>
+    <td><!--begin-->
+      <form method="post" action="main.php?do=<!--{$type_name}-->_<!--{$action}-->" name="myform" id="myform" enctype="multipart/form-data">
+        <!--{$parent_ids_input_hidden}-->
+        <input type="hidden" name="do" value="<!--{$do}-->" />
+        <input type="hidden" name="type_name" value="<!--{$type_name}-->" />
+        <input type="hidden" name="action" value="<!--{$action}-->" />
+        <input type="hidden" name="pt" value='<!--{$pt}-->' />
+        <table border="0" width="100%" cellspacing="0" cellpadding="3">
+          <!--{$peizhi}-->
+        </table>
+        <hr size="1" />
+        <p>
+          <input type="submit" onclick="actionclick(self.document.myform);return false;" value="<!--{$tpl_zengjia}-->" />
+          <!--<input type="reset" value="  {$tpl_chongxie}   " />-->
+        </p>
+      </form>
+      <!--end-->
+    </td>
+  </tr>
+</table>
+<script language="javascript" type="text/javascript" src="<!--{$RES_WEBPATH_PREF}-->dpa_html/My97DatePicker/WdatePicker.js"></script>
+<script language="javascript" src="<!--{$RES_WEBPATH_PREF}-->dpa_html/dataShow/datetime.js"></script>
+</body>
+</html>
